@@ -1,0 +1,41 @@
+{
+  "incident_id": "S08_kafka_queue_lag_run_05",
+  "family_id": "S08_kafka_queue_lag",
+  "region": "ap",
+  "scheduled_anchor_kst": "2026-03-24T06:00:00+09:00",
+  "preferred_hour_kst": 0,
+  "scenario_traits": {
+    "time_pattern_label": "shifted_window",
+    "sequence_variation_label": "near_tie_primary_first",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "product-catalog",
+  "alarm_family": "pod_restart_count",
+  "slot_top_service": "product-catalog",
+  "slot_top_metric_family": "pod_restart_count",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 4000000.0,
+  "change_start_service": "product-catalog",
+  "change_start_metric_family": "pod_restart_count",
+  "change_start_delta_pct": NaN,
+  "change_start_residual_z": 1000000.0,
+  "sequence_services": [
+    "kafka",
+    "cart",
+    "frontend",
+    "product-catalog",
+    "checkout"
+  ],
+  "sequence_metrics": [
+    "queue_lag",
+    "request_count",
+    "request_count",
+    "pod_running_count",
+    "cpu_usage"
+  ],
+  "service_text": "incident_id S08_kafka_queue_lag_run_05 family_id S08_kafka_queue_lag region ap slot_top_service product-catalog slot_top_metric pod_restart_count slot_top_delta_pct na slot_top_residual_z 4000000.00 change_start_service product-catalog change_start_metric pod_restart_count change_start_offset -10.7m change_start_delta_pct na change_start_residual_z 1000000.00 sequence_rank1_service kafka sequence_rank1_metric queue_lag sequence_rank1_offset -11.0m sequence_rank2_service cart sequence_rank2_metric request_count sequence_rank2_offset -11.0m sequence_rank3_service frontend sequence_rank3_metric request_count sequence_rank3_offset -11.0m sequence_rank4_service product-catalog sequence_rank4_metric pod_running_count sequence_rank4_offset -11.0m sequence_rank5_service checkout sequence_rank5_metric cpu_usage sequence_rank5_offset -11.0m slot_rank1_service product-catalog slot_rank1_metric pod_restart_count slot_rank2_service kafka slot_rank2_metric pod_restart_count slot_rank3_service kafka slot_rank3_metric memory_usage slot_rank4_service kafka slot_rank4_metric queue_lag slot_rank5_service kafka slot_rank5_metric cpu_usage",
+  "line_text": "rank 1 service kafka metric queue_lag earliest_residual_z 3000000.00 peak_residual_z 3000000.00 rank 2 service cart metric request_count earliest_residual_z -0.40 peak_residual_z 4.56 rank 3 service frontend metric request_count earliest_residual_z -0.40 peak_residual_z 4.33 rank 4 service product-catalog metric pod_running_count earliest_residual_z -2.00 peak_residual_z -2.00 rank 5 service checkout metric cpu_usage earliest_residual_z -1.23 peak_residual_z 3.09"
+}

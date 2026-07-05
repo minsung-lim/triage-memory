@@ -1,0 +1,41 @@
+{
+  "incident_id": "S12_cart_failed_readiness_run_09",
+  "family_id": "S12_cart_failed_readiness",
+  "region": "eu",
+  "scheduled_anchor_kst": "2026-08-20T00:00:00+09:00",
+  "preferred_hour_kst": 0,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "ad",
+  "alarm_family": "dependency_error_ratio",
+  "slot_top_service": "ad",
+  "slot_top_metric_family": "dependency_error_ratio",
+  "slot_top_delta_pct": 1933.3333333333328,
+  "slot_top_residual_z": 4.39696865275764,
+  "change_start_service": "product-catalog",
+  "change_start_metric_family": "cpu_usage",
+  "change_start_delta_pct": 86.83065013766063,
+  "change_start_residual_z": 1.491117880013833,
+  "sequence_services": [
+    "checkout",
+    "email",
+    "payment",
+    "cart",
+    "product-catalog"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S12_cart_failed_readiness_run_09 family_id S12_cart_failed_readiness region eu slot_top_service ad slot_top_metric dependency_error_ratio slot_top_delta_pct +1933.33% slot_top_residual_z 4.40 change_start_service product-catalog change_start_metric cpu_usage change_start_offset -8.5m change_start_delta_pct +86.83% change_start_residual_z 1.49 sequence_rank1_service checkout sequence_rank1_metric request_count sequence_rank1_offset -9.5m sequence_rank2_service email sequence_rank2_metric request_count sequence_rank2_offset -9.5m sequence_rank3_service payment sequence_rank3_metric request_count sequence_rank3_offset -9.5m sequence_rank4_service cart sequence_rank4_metric request_count sequence_rank4_offset -9.5m sequence_rank5_service product-catalog sequence_rank5_metric request_count sequence_rank5_offset -9.5m slot_rank1_service ad slot_rank1_metric dependency_error_ratio slot_rank2_service recommendation slot_rank2_metric dependency_error_ratio slot_rank3_service cart slot_rank3_metric latency_p95 slot_rank4_service product-catalog slot_rank4_metric cpu_usage slot_rank5_service product-catalog slot_rank5_metric latency_p95",
+  "line_text": "rank 1 service checkout metric request_count earliest_residual_z -0.31 peak_residual_z 10.16 rank 2 service email metric request_count earliest_residual_z -0.29 peak_residual_z 9.27 rank 3 service payment metric request_count earliest_residual_z -0.29 peak_residual_z 9.27 rank 4 service cart metric request_count earliest_residual_z -0.40 peak_residual_z 8.31 rank 5 service product-catalog metric request_count earliest_residual_z -0.44 peak_residual_z 4.54"
+}

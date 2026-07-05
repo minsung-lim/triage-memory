@@ -1,0 +1,19 @@
+{
+  "incident_id": "S03_checkout_pod_kill_run_06",
+  "family_id": "S03_checkout_pod_kill",
+  "tier": "frequent",
+  "region": "us",
+  "preferred_hour_kst": 0,
+  "scheduled_hour_kst": 6,
+  "scheduled_anchor_kst": "2026-02-09T06:00:00+09:00",
+  "time_pattern_label": "shifted_window",
+  "sequence_variation_label": "near_tie_secondary_first",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "checkout",
+  "root_metric_truth": "pod_restart_count",
+  "expected_earliest": "checkout/pod_restart_count",
+  "expected_dominant": "frontend/http_5xx_ratio"
+}

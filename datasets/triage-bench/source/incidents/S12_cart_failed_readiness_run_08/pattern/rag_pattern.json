@@ -1,0 +1,41 @@
+{
+  "incident_id": "S12_cart_failed_readiness_run_08",
+  "family_id": "S12_cart_failed_readiness",
+  "region": "us",
+  "scheduled_anchor_kst": "2026-08-19T00:00:00+09:00",
+  "preferred_hour_kst": 0,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "email",
+  "alarm_family": "latency_p95",
+  "slot_top_service": "email",
+  "slot_top_metric_family": "latency_p95",
+  "slot_top_delta_pct": 714.4220572640509,
+  "slot_top_residual_z": 26.89748018133305,
+  "change_start_service": "product-catalog",
+  "change_start_metric_family": "latency_p95",
+  "change_start_delta_pct": 76.95351641446304,
+  "change_start_residual_z": 0.7164606949730742,
+  "sequence_services": [
+    "checkout",
+    "ad",
+    "recommendation",
+    "cart",
+    "cart"
+  ],
+  "sequence_metrics": [
+    "cpu_usage",
+    "request_count",
+    "request_count",
+    "request_count",
+    "cpu_usage"
+  ],
+  "service_text": "incident_id S12_cart_failed_readiness_run_08 family_id S12_cart_failed_readiness region us slot_top_service email slot_top_metric latency_p95 slot_top_delta_pct +714.42% slot_top_residual_z 26.90 change_start_service product-catalog change_start_metric latency_p95 change_start_offset -9.3m change_start_delta_pct +76.95% change_start_residual_z 0.72 sequence_rank1_service checkout sequence_rank1_metric cpu_usage sequence_rank1_offset -9.5m sequence_rank2_service ad sequence_rank2_metric request_count sequence_rank2_offset -9.5m sequence_rank3_service recommendation sequence_rank3_metric request_count sequence_rank3_offset -9.5m sequence_rank4_service cart sequence_rank4_metric request_count sequence_rank4_offset -9.5m sequence_rank5_service cart sequence_rank5_metric cpu_usage sequence_rank5_offset -9.5m slot_rank1_service email slot_rank1_metric latency_p95 slot_rank2_service product-catalog slot_rank2_metric latency_p95 slot_rank3_service recommendation slot_rank3_metric dependency_error_ratio slot_rank4_service ad slot_rank4_metric cpu_usage slot_rank5_service ad slot_rank5_metric dependency_error_ratio",
+  "line_text": "rank 1 service checkout metric cpu_usage earliest_residual_z -0.79 peak_residual_z 1.73 rank 2 service ad metric request_count earliest_residual_z -0.30 peak_residual_z 5.55 rank 3 service recommendation metric request_count earliest_residual_z -0.28 peak_residual_z 5.46 rank 4 service cart metric request_count earliest_residual_z -0.38 peak_residual_z 4.40 rank 5 service cart metric cpu_usage earliest_residual_z -2.10 peak_residual_z 2.29"
+}

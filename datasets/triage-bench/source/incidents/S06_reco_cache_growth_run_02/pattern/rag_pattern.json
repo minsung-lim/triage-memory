@@ -1,0 +1,41 @@
+{
+  "incident_id": "S06_reco_cache_growth_run_02",
+  "family_id": "S06_reco_cache_growth",
+  "region": "ap",
+  "scheduled_anchor_kst": "2026-03-05T07:00:00+09:00",
+  "preferred_hour_kst": 7,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "near_tie_primary_first",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 20
+  },
+  "anchor_service": "product-catalog",
+  "alarm_family": "latency_p95",
+  "slot_top_service": "product-catalog",
+  "slot_top_metric_family": "latency_p95",
+  "slot_top_delta_pct": 316.35260085680306,
+  "slot_top_residual_z": 63.27052017136062,
+  "change_start_service": "recommendation",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": 23.693913889531853,
+  "change_start_residual_z": 4.738782777906371,
+  "sequence_services": [
+    "recommendation",
+    "product-catalog",
+    "product-catalog",
+    "recommendation",
+    "cart"
+  ],
+  "sequence_metrics": [
+    "memory_usage",
+    "cpu_usage",
+    "request_count",
+    "cpu_usage",
+    "request_count"
+  ],
+  "service_text": "incident_id S06_reco_cache_growth_run_02 family_id S06_reco_cache_growth region ap slot_top_service product-catalog slot_top_metric latency_p95 slot_top_delta_pct +316.35% slot_top_residual_z 63.27 change_start_service recommendation change_start_metric memory_usage change_start_offset -21.7m change_start_delta_pct +23.69% change_start_residual_z 4.74 sequence_rank1_service recommendation sequence_rank1_metric memory_usage sequence_rank1_offset -21.7m sequence_rank2_service product-catalog sequence_rank2_metric cpu_usage sequence_rank2_offset -21.7m sequence_rank3_service product-catalog sequence_rank3_metric request_count sequence_rank3_offset -21.7m sequence_rank4_service recommendation sequence_rank4_metric cpu_usage sequence_rank4_offset -21.7m sequence_rank5_service cart sequence_rank5_metric request_count sequence_rank5_offset -21.7m slot_rank1_service product-catalog slot_rank1_metric latency_p95 slot_rank2_service cart slot_rank2_metric latency_p95 slot_rank3_service recommendation slot_rank3_metric memory_usage slot_rank4_service checkout slot_rank4_metric latency_p95 slot_rank5_service recommendation slot_rank5_metric latency_p95",
+  "line_text": "rank 1 service recommendation metric memory_usage earliest_residual_z 4.74 peak_residual_z 14.16 rank 2 service product-catalog metric cpu_usage earliest_residual_z 4.13 peak_residual_z 4.84 rank 3 service product-catalog metric request_count earliest_residual_z -0.31 peak_residual_z 4.67 rank 4 service recommendation metric cpu_usage earliest_residual_z 3.51 peak_residual_z 5.05 rank 5 service cart metric request_count earliest_residual_z -0.31 peak_residual_z 2.49"
+}

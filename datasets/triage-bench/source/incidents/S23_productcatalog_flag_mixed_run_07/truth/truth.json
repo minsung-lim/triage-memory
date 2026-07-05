@@ -1,0 +1,19 @@
+{
+  "incident_id": "S23_productcatalog_flag_mixed_run_07",
+  "family_id": "S23_productcatalog_flag_mixed",
+  "tier": "mixed_30min",
+  "region": "eu",
+  "preferred_hour_kst": 18,
+  "scheduled_hour_kst": 18,
+  "scheduled_anchor_kst": "2027-02-10T18:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "productcatalog_flag_mixed_30min_07",
+  "order_competition_group": "mixed_symptom_30min",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "recommendation",
+  "root_metric_truth": "dependency_error_ratio",
+  "expected_earliest": "recommendation/dependency_error_ratio",
+  "expected_dominant": "recommendation/dependency_error_ratio"
+}

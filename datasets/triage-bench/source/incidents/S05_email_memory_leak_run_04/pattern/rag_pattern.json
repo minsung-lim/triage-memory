@@ -1,0 +1,41 @@
+{
+  "incident_id": "S05_email_memory_leak_run_04",
+  "family_id": "S05_email_memory_leak",
+  "region": "eu",
+  "scheduled_anchor_kst": "2026-02-27T11:00:00+09:00",
+  "preferred_hour_kst": 13,
+  "scenario_traits": {
+    "time_pattern_label": "nearby_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "email",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "email",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": 61.5019813789468,
+  "slot_top_residual_z": 12.300396275789359,
+  "change_start_service": "email",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": 20.357440550708215,
+  "change_start_residual_z": 4.071488110141643,
+  "sequence_services": [
+    "email",
+    "cart",
+    "frontend",
+    "ad",
+    "recommendation"
+  ],
+  "sequence_metrics": [
+    "memory_usage",
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S05_email_memory_leak_run_04 family_id S05_email_memory_leak region eu slot_top_service email slot_top_metric memory_usage slot_top_delta_pct +61.50% slot_top_residual_z 12.30 change_start_service email change_start_metric memory_usage change_start_offset -10.8m change_start_delta_pct +20.36% change_start_residual_z 4.07 sequence_rank1_service email sequence_rank1_metric memory_usage sequence_rank1_offset -10.8m sequence_rank2_service cart sequence_rank2_metric request_count sequence_rank2_offset -10.8m sequence_rank3_service frontend sequence_rank3_metric request_count sequence_rank3_offset -10.8m sequence_rank4_service ad sequence_rank4_metric request_count sequence_rank4_offset -10.8m sequence_rank5_service recommendation sequence_rank5_metric request_count sequence_rank5_offset -10.8m slot_rank1_service email slot_rank1_metric memory_usage slot_rank2_service product-catalog slot_rank2_metric cpu_usage slot_rank3_service cart slot_rank3_metric request_count slot_rank4_service frontend slot_rank4_metric request_count slot_rank5_service ad slot_rank5_metric request_count",
+  "line_text": "rank 1 service email metric memory_usage earliest_residual_z 4.07 peak_residual_z 12.30 rank 2 service cart metric request_count earliest_residual_z -0.37 peak_residual_z 5.08 rank 3 service frontend metric request_count earliest_residual_z -0.37 peak_residual_z 5.06 rank 4 service ad metric request_count earliest_residual_z -0.37 peak_residual_z 5.74 rank 5 service recommendation metric request_count earliest_residual_z -0.37 peak_residual_z 5.69"
+}

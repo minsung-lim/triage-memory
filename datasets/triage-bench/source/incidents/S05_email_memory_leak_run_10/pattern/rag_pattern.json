@@ -1,0 +1,41 @@
+{
+  "incident_id": "S05_email_memory_leak_run_10",
+  "family_id": "S05_email_memory_leak",
+  "region": "us",
+  "scheduled_anchor_kst": "2026-08-09T13:00:00+09:00",
+  "preferred_hour_kst": 13,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "email",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "email",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": 68.95683914815852,
+  "slot_top_residual_z": 13.791367829631705,
+  "change_start_service": "email",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": 22.969798903562438,
+  "change_start_residual_z": 4.5939597807124875,
+  "sequence_services": [
+    "checkout",
+    "payment",
+    "email",
+    "cart",
+    "checkout"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count",
+    "cpu_usage"
+  ],
+  "service_text": "incident_id S05_email_memory_leak_run_10 family_id S05_email_memory_leak region us slot_top_service email slot_top_metric memory_usage slot_top_delta_pct +68.96% slot_top_residual_z 13.79 change_start_service email change_start_metric memory_usage change_start_offset -9.3m change_start_delta_pct +22.97% change_start_residual_z 4.59 sequence_rank1_service checkout sequence_rank1_metric request_count sequence_rank1_offset -9.5m sequence_rank2_service payment sequence_rank2_metric request_count sequence_rank2_offset -9.5m sequence_rank3_service email sequence_rank3_metric request_count sequence_rank3_offset -9.5m sequence_rank4_service cart sequence_rank4_metric request_count sequence_rank4_offset -9.5m sequence_rank5_service checkout sequence_rank5_metric cpu_usage sequence_rank5_offset -9.5m slot_rank1_service email slot_rank1_metric memory_usage slot_rank2_service email slot_rank2_metric latency_p95 slot_rank3_service recommendation slot_rank3_metric dependency_error_ratio slot_rank4_service ad slot_rank4_metric dependency_error_ratio slot_rank5_service product-catalog slot_rank5_metric latency_p95",
+  "line_text": "rank 1 service checkout metric request_count earliest_residual_z -0.28 peak_residual_z 4.98 rank 2 service payment metric request_count earliest_residual_z -0.28 peak_residual_z 4.98 rank 3 service email metric request_count earliest_residual_z -0.28 peak_residual_z 4.98 rank 4 service cart metric request_count earliest_residual_z -0.32 peak_residual_z 4.97 rank 5 service checkout metric cpu_usage earliest_residual_z -0.80 peak_residual_z 1.19"
+}

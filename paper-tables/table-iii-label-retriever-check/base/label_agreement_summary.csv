@@ -1,0 +1,5 @@
+metric,n_cases,agree_count,disagree_count,agreement_rate,chance_agreement,cohen_kappa,label_set_size,note
+first_service_label,30,25,5,0.833333,0.236667,0.781659,5,Human inter-rater agreement before adjudication.
+family_component,30,30,0,1.000000,0.197778,1.000000,8,Family scoring unit used for family@1.
+family_representative_case,30,26,4,0.866667,0.167778,0.839786,12,Stricter representative-case agreement; review detail.
+four_field_first_service_at1_direct_agreement_subset,25,21,4,0.840000,,,,Full-record retrieval first-service match on cases where the two reviewers directly agreed.

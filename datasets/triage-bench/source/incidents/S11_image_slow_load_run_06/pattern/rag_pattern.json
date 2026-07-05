@@ -1,0 +1,41 @@
+{
+  "incident_id": "S11_image_slow_load_run_06",
+  "family_id": "S11_image_slow_load",
+  "region": "ap",
+  "scheduled_anchor_kst": "2026-04-14T22:00:00+09:00",
+  "preferred_hour_kst": 20,
+  "scenario_traits": {
+    "time_pattern_label": "nearby_window",
+    "sequence_variation_label": "near_tie_secondary_first",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "kafka",
+  "alarm_family": "cpu_usage",
+  "slot_top_service": "kafka",
+  "slot_top_metric_family": "cpu_usage",
+  "slot_top_delta_pct": 97.8766289299701,
+  "slot_top_residual_z": 10.935675272012702,
+  "change_start_service": "checkout",
+  "change_start_metric_family": "cpu_usage",
+  "change_start_delta_pct": 27.290859648449327,
+  "change_start_residual_z": 2.351314951882179,
+  "sequence_services": [
+    "checkout",
+    "cart",
+    "frontend",
+    "recommendation",
+    "frontend"
+  ],
+  "sequence_metrics": [
+    "cpu_usage",
+    "request_count",
+    "request_count",
+    "latency_p95",
+    "latency_p95"
+  ],
+  "service_text": "incident_id S11_image_slow_load_run_06 family_id S11_image_slow_load region ap slot_top_service kafka slot_top_metric cpu_usage slot_top_delta_pct +97.88% slot_top_residual_z 10.94 change_start_service checkout change_start_metric cpu_usage change_start_offset -10.8m change_start_delta_pct +27.29% change_start_residual_z 2.35 sequence_rank1_service checkout sequence_rank1_metric cpu_usage sequence_rank1_offset -10.8m sequence_rank2_service cart sequence_rank2_metric request_count sequence_rank2_offset -10.8m sequence_rank3_service frontend sequence_rank3_metric request_count sequence_rank3_offset -10.8m sequence_rank4_service recommendation sequence_rank4_metric latency_p95 sequence_rank4_offset -10.8m sequence_rank5_service frontend sequence_rank5_metric latency_p95 sequence_rank5_offset -10.8m slot_rank1_service kafka slot_rank1_metric cpu_usage slot_rank2_service payment slot_rank2_metric cpu_usage slot_rank3_service frontend slot_rank3_metric cpu_usage slot_rank4_service checkout slot_rank4_metric cpu_usage slot_rank5_service ad slot_rank5_metric dependency_error_ratio",
+  "line_text": "rank 1 service checkout metric cpu_usage earliest_residual_z 2.35 peak_residual_z 3.84 rank 2 service cart metric request_count earliest_residual_z 3.08 peak_residual_z 3.08 rank 3 service frontend metric request_count earliest_residual_z 2.19 peak_residual_z 2.42 rank 4 service recommendation metric latency_p95 earliest_residual_z -3.51 peak_residual_z -3.51 rank 5 service frontend metric latency_p95 earliest_residual_z -0.44 peak_residual_z 0.67"
+}

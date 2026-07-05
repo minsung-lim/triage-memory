@@ -1,0 +1,41 @@
+{
+  "incident_id": "S07_homepage_flood_run_09",
+  "family_id": "S07_homepage_flood",
+  "region": "us",
+  "scheduled_anchor_kst": "2026-08-03T20:00:00+09:00",
+  "preferred_hour_kst": 20,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "checkout",
+  "alarm_family": "pod_running_count",
+  "slot_top_service": "checkout",
+  "slot_top_metric_family": "pod_running_count",
+  "slot_top_delta_pct": -36.72316384180791,
+  "slot_top_residual_z": -1.1760011579094025,
+  "change_start_service": "checkout",
+  "change_start_metric_family": "pod_running_count",
+  "change_start_delta_pct": -36.72316384180791,
+  "change_start_residual_z": -1.1760011579094025,
+  "sequence_services": [
+    "checkout",
+    "email",
+    "frontend",
+    "recommendation",
+    "kafka"
+  ],
+  "sequence_metrics": [
+    "pod_running_count",
+    "pod_running_count",
+    "pod_running_count",
+    "pod_running_count",
+    "queue_lag"
+  ],
+  "service_text": "incident_id S07_homepage_flood_run_09 family_id S07_homepage_flood region us slot_top_service checkout slot_top_metric pod_running_count slot_top_delta_pct -36.72% slot_top_residual_z -1.18 change_start_service checkout change_start_metric pod_running_count change_start_offset -9.8m change_start_delta_pct -36.72% change_start_residual_z -1.18 sequence_rank1_service checkout sequence_rank1_metric pod_running_count sequence_rank1_offset -9.8m sequence_rank2_service email sequence_rank2_metric pod_running_count sequence_rank2_offset -9.8m sequence_rank3_service frontend sequence_rank3_metric pod_running_count sequence_rank3_offset -9.8m sequence_rank4_service recommendation sequence_rank4_metric pod_running_count sequence_rank4_offset -9.8m sequence_rank5_service kafka sequence_rank5_metric queue_lag sequence_rank5_offset -9.8m slot_rank1_service checkout slot_rank1_metric pod_running_count slot_rank2_service email slot_rank2_metric pod_running_count slot_rank3_service frontend slot_rank3_metric pod_running_count slot_rank4_service recommendation slot_rank4_metric pod_running_count slot_rank5_service kafka slot_rank5_metric queue_lag",
+  "line_text": "rank 1 service checkout metric pod_running_count earliest_residual_z -1.18 peak_residual_z -1.18 rank 2 service email metric pod_running_count earliest_residual_z -1.18 peak_residual_z -1.18 rank 3 service frontend metric pod_running_count earliest_residual_z -1.18 peak_residual_z -1.18 rank 4 service recommendation metric pod_running_count earliest_residual_z -1.18 peak_residual_z -1.18 rank 5 service kafka metric queue_lag earliest_residual_z 1.20 peak_residual_z 1.20"
+}

@@ -1,0 +1,41 @@
+{
+  "incident_id": "S08_kafka_queue_lag_run_11",
+  "family_id": "S08_kafka_queue_lag",
+  "region": "ap",
+  "scheduled_anchor_kst": "2026-09-17T00:00:00+09:00",
+  "preferred_hour_kst": 0,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "kafka",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "kafka",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": -99.78502631667239,
+  "slot_top_residual_z": -19.957005263334477,
+  "change_start_service": "frontend",
+  "change_start_metric_family": "latency_p95",
+  "change_start_delta_pct": 544.415575550623,
+  "change_start_residual_z": 2.8164690252814624,
+  "sequence_services": [
+    "frontend",
+    "email",
+    "cart",
+    "ad",
+    "checkout"
+  ],
+  "sequence_metrics": [
+    "latency_p95",
+    "latency_p95",
+    "latency_p95",
+    "request_count",
+    "latency_p95"
+  ],
+  "service_text": "incident_id S08_kafka_queue_lag_run_11 family_id S08_kafka_queue_lag region ap slot_top_service kafka slot_top_metric memory_usage slot_top_delta_pct -99.79% slot_top_residual_z -19.96 change_start_service frontend change_start_metric latency_p95 change_start_offset -10.0m change_start_delta_pct +544.42% change_start_residual_z 2.82 sequence_rank1_service frontend sequence_rank1_metric latency_p95 sequence_rank1_offset -10.0m sequence_rank2_service email sequence_rank2_metric latency_p95 sequence_rank2_offset -10.0m sequence_rank3_service cart sequence_rank3_metric latency_p95 sequence_rank3_offset -10.0m sequence_rank4_service ad sequence_rank4_metric request_count sequence_rank4_offset -10.0m sequence_rank5_service checkout sequence_rank5_metric latency_p95 sequence_rank5_offset -10.0m slot_rank1_service kafka slot_rank1_metric memory_usage slot_rank2_service kafka slot_rank2_metric cpu_usage slot_rank3_service frontend slot_rank3_metric latency_p95 slot_rank4_service kafka slot_rank4_metric queue_lag slot_rank5_service recommendation slot_rank5_metric dependency_error_ratio",
+  "line_text": "rank 1 service frontend metric latency_p95 earliest_residual_z 2.82 peak_residual_z 5.30 rank 2 service email metric latency_p95 earliest_residual_z 2.82 peak_residual_z 2.82 rank 3 service cart metric latency_p95 earliest_residual_z 1.74 peak_residual_z 1.74 rank 4 service ad metric request_count earliest_residual_z 2.54 peak_residual_z 8.30 rank 5 service checkout metric latency_p95 earliest_residual_z 0.89 peak_residual_z 0.89"
+}

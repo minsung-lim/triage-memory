@@ -1,0 +1,41 @@
+{
+  "incident_id": "S22_image_provider_memory_stress_run_08",
+  "family_id": "S22_image_provider_memory_stress",
+  "region": "us",
+  "scheduled_anchor_kst": "2027-04-29T07:00:00+09:00",
+  "preferred_hour_kst": 7,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "candidate200_30min_extension",
+    "order_competition_group": "candidate200_new_family_extension",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "image-provider",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "image-provider",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": 248.38483783538442,
+  "slot_top_residual_z": 3.196314600983763,
+  "change_start_service": "image-provider",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": -24.137304993969888,
+  "change_start_residual_z": -0.3106084133515236,
+  "sequence_services": [
+    "image-provider",
+    "frontend",
+    "image-provider",
+    "frontend",
+    "ad"
+  ],
+  "sequence_metrics": [
+    "memory_usage",
+    "request_count",
+    "request_count",
+    "cpu_usage",
+    "dependency_error_ratio"
+  ],
+  "service_text": "incident_id S22_image_provider_memory_stress_run_08 family_id S22_image_provider_memory_stress region us slot_top_service image-provider slot_top_metric memory_usage slot_top_delta_pct +248.38% slot_top_residual_z 3.20 change_start_service image-provider change_start_metric memory_usage change_start_offset -9.2m change_start_delta_pct -24.14% change_start_residual_z -0.31 sequence_rank1_service image-provider sequence_rank1_metric memory_usage sequence_rank1_offset -9.2m sequence_rank2_service frontend sequence_rank2_metric request_count sequence_rank2_offset -9.2m sequence_rank3_service image-provider sequence_rank3_metric request_count sequence_rank3_offset -9.2m sequence_rank4_service frontend sequence_rank4_metric cpu_usage sequence_rank4_offset -9.0m sequence_rank5_service ad sequence_rank5_metric dependency_error_ratio sequence_rank5_offset -7.0m slot_rank1_service image-provider slot_rank1_metric memory_usage slot_rank2_service recommendation slot_rank2_metric dependency_error_ratio slot_rank3_service ad slot_rank3_metric dependency_error_ratio slot_rank4_service frontend slot_rank4_metric latency_p95 slot_rank5_service ad slot_rank5_metric cpu_usage",
+  "line_text": "rank 1 service image-provider metric memory_usage earliest_residual_z -0.31 peak_residual_z 3.20 rank 2 service frontend metric request_count earliest_residual_z -0.46 peak_residual_z 2.15 rank 3 service image-provider metric request_count earliest_residual_z -0.46 peak_residual_z 2.15 rank 4 service frontend metric cpu_usage earliest_residual_z 2.55 peak_residual_z 2.55 rank 5 service ad metric dependency_error_ratio earliest_residual_z 7.81 peak_residual_z 7.81"
+}

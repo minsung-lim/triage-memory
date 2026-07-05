@@ -1,0 +1,41 @@
+{
+  "incident_id": "S06_reco_cache_growth_run_05",
+  "family_id": "S06_reco_cache_growth",
+  "region": "eu",
+  "scheduled_anchor_kst": "2026-03-08T13:00:00+09:00",
+  "preferred_hour_kst": 7,
+  "scenario_traits": {
+    "time_pattern_label": "shifted_window",
+    "sequence_variation_label": "near_tie_primary_first",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 20
+  },
+  "anchor_service": "recommendation",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "recommendation",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": 70.27629144869015,
+  "slot_top_residual_z": 14.055258289738028,
+  "change_start_service": "recommendation",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": 23.2995842698864,
+  "change_start_residual_z": 4.65991685397728,
+  "sequence_services": [
+    "recommendation",
+    "frontend",
+    "cart",
+    "recommendation",
+    "ad"
+  ],
+  "sequence_metrics": [
+    "memory_usage",
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S06_reco_cache_growth_run_05 family_id S06_reco_cache_growth region eu slot_top_service recommendation slot_top_metric memory_usage slot_top_delta_pct +70.28% slot_top_residual_z 14.06 change_start_service recommendation change_start_metric memory_usage change_start_offset -21.7m change_start_delta_pct +23.30% change_start_residual_z 4.66 sequence_rank1_service recommendation sequence_rank1_metric memory_usage sequence_rank1_offset -21.7m sequence_rank2_service frontend sequence_rank2_metric request_count sequence_rank2_offset -21.7m sequence_rank3_service cart sequence_rank3_metric request_count sequence_rank3_offset -21.7m sequence_rank4_service recommendation sequence_rank4_metric request_count sequence_rank4_offset -21.7m sequence_rank5_service ad sequence_rank5_metric request_count sequence_rank5_offset -21.7m slot_rank1_service recommendation slot_rank1_metric memory_usage slot_rank2_service product-catalog slot_rank2_metric cpu_usage slot_rank3_service ad slot_rank3_metric dependency_error_ratio slot_rank4_service frontend slot_rank4_metric request_count slot_rank5_service cart slot_rank5_metric request_count",
+  "line_text": "rank 1 service recommendation metric memory_usage earliest_residual_z 4.66 peak_residual_z 14.06 rank 2 service frontend metric request_count earliest_residual_z -0.41 peak_residual_z 4.57 rank 3 service cart metric request_count earliest_residual_z -0.41 peak_residual_z 4.25 rank 4 service recommendation metric request_count earliest_residual_z -0.41 peak_residual_z 5.49 rank 5 service ad metric request_count earliest_residual_z -0.41 peak_residual_z 5.33"
+}

@@ -1,0 +1,41 @@
+{
+  "incident_id": "S12_cart_failed_readiness_run_06",
+  "family_id": "S12_cart_failed_readiness",
+  "region": "eu",
+  "scheduled_anchor_kst": "2026-04-20T02:00:00+09:00",
+  "preferred_hour_kst": 0,
+  "scenario_traits": {
+    "time_pattern_label": "nearby_window",
+    "sequence_variation_label": "near_tie_secondary_first",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "recommendation",
+  "alarm_family": "dependency_error_ratio",
+  "slot_top_service": "recommendation",
+  "slot_top_metric_family": "dependency_error_ratio",
+  "slot_top_delta_pct": 4176.100086281277,
+  "slot_top_residual_z": 7.344987090214755,
+  "change_start_service": "cart",
+  "change_start_metric_family": "latency_p95",
+  "change_start_delta_pct": 23.998115280107598,
+  "change_start_residual_z": 2.313783012390825,
+  "sequence_services": [
+    "cart",
+    "frontend",
+    "ad",
+    "recommendation",
+    "checkout"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S12_cart_failed_readiness_run_06 family_id S12_cart_failed_readiness region eu slot_top_service recommendation slot_top_metric dependency_error_ratio slot_top_delta_pct +4176.10% slot_top_residual_z 7.34 change_start_service cart change_start_metric latency_p95 change_start_offset -9.5m change_start_delta_pct +24.00% change_start_residual_z 2.31 sequence_rank1_service cart sequence_rank1_metric request_count sequence_rank1_offset -10.2m sequence_rank2_service frontend sequence_rank2_metric request_count sequence_rank2_offset -10.2m sequence_rank3_service ad sequence_rank3_metric request_count sequence_rank3_offset -10.2m sequence_rank4_service recommendation sequence_rank4_metric request_count sequence_rank4_offset -10.2m sequence_rank5_service checkout sequence_rank5_metric request_count sequence_rank5_offset -10.2m slot_rank1_service recommendation slot_rank1_metric dependency_error_ratio slot_rank2_service cart slot_rank2_metric latency_p95 slot_rank3_service product-catalog slot_rank3_metric latency_p95 slot_rank4_service cart slot_rank4_metric request_count slot_rank5_service frontend slot_rank5_metric request_count",
+  "line_text": "rank 1 service cart metric request_count earliest_residual_z -0.42 peak_residual_z 5.05 rank 2 service frontend metric request_count earliest_residual_z -0.44 peak_residual_z 4.83 rank 3 service ad metric request_count earliest_residual_z -0.42 peak_residual_z 5.92 rank 4 service recommendation metric request_count earliest_residual_z -0.41 peak_residual_z 5.37 rank 5 service checkout metric request_count earliest_residual_z -0.42 peak_residual_z 5.26"
+}

@@ -1,0 +1,41 @@
+{
+  "incident_id": "S05_email_memory_leak_run_08",
+  "family_id": "S05_email_memory_leak",
+  "region": "eu",
+  "scheduled_anchor_kst": "2026-03-03T13:00:00+09:00",
+  "preferred_hour_kst": 13,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "near_tie_primary_first",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "email",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "email",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": 60.98269006219995,
+  "slot_top_residual_z": 12.196538012439989,
+  "change_start_service": "email",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": 60.28783867550255,
+  "change_start_residual_z": 12.057567735100507,
+  "sequence_services": [
+    "product-catalog",
+    "frontend",
+    "cart",
+    "recommendation",
+    "ad"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S05_email_memory_leak_run_08 family_id S05_email_memory_leak region eu slot_top_service email slot_top_metric memory_usage slot_top_delta_pct +60.98% slot_top_residual_z 12.20 change_start_service email change_start_metric memory_usage change_start_offset -10.3m change_start_delta_pct +60.29% change_start_residual_z 12.06 sequence_rank1_service product-catalog sequence_rank1_metric request_count sequence_rank1_offset -10.5m sequence_rank2_service frontend sequence_rank2_metric request_count sequence_rank2_offset -10.5m sequence_rank3_service cart sequence_rank3_metric request_count sequence_rank3_offset -10.5m sequence_rank4_service recommendation sequence_rank4_metric request_count sequence_rank4_offset -10.5m sequence_rank5_service ad sequence_rank5_metric request_count sequence_rank5_offset -10.5m slot_rank1_service email slot_rank1_metric memory_usage slot_rank2_service checkout slot_rank2_metric cpu_usage slot_rank3_service checkout slot_rank3_metric latency_p95 slot_rank4_service recommendation slot_rank4_metric dependency_error_ratio slot_rank5_service kafka slot_rank5_metric queue_lag",
+  "line_text": "rank 1 service product-catalog metric request_count earliest_residual_z -0.36 peak_residual_z 7.15 rank 2 service frontend metric request_count earliest_residual_z -0.41 peak_residual_z 2.50 rank 3 service cart metric request_count earliest_residual_z -0.41 peak_residual_z 2.49 rank 4 service recommendation metric request_count earliest_residual_z -0.41 peak_residual_z 3.41 rank 5 service ad metric request_count earliest_residual_z -0.41 peak_residual_z 3.39"
+}

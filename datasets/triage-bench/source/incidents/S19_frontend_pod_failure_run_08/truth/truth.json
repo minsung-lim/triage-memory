@@ -1,0 +1,19 @@
+{
+  "incident_id": "S19_frontend_pod_failure_run_08",
+  "family_id": "S19_frontend_pod_failure",
+  "tier": "candidate200_30min_extension",
+  "region": "us",
+  "preferred_hour_kst": 7,
+  "scheduled_hour_kst": 7,
+  "scheduled_anchor_kst": "2027-04-05T07:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "candidate200_30min_extension",
+  "order_competition_group": "candidate200_new_family_extension",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "frontend",
+  "root_metric_truth": "pod_restart_count",
+  "expected_earliest": "frontend/pod_restart_count",
+  "expected_dominant": "frontend/pod_restart_count"
+}

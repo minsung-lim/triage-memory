@@ -1,0 +1,41 @@
+{
+  "incident_id": "S02_payment_failure_run_04",
+  "family_id": "S02_payment_failure",
+  "region": "us",
+  "scheduled_anchor_kst": "2026-01-28T14:00:00+09:00",
+  "preferred_hour_kst": 13,
+  "scenario_traits": {
+    "time_pattern_label": "nearby_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "checkout",
+  "alarm_family": "error_ratio",
+  "slot_top_service": "checkout",
+  "slot_top_metric_family": "error_ratio",
+  "slot_top_delta_pct": 42364.825046040525,
+  "slot_top_residual_z": 39.85347500623042,
+  "change_start_service": "checkout",
+  "change_start_metric_family": "error_ratio",
+  "change_start_delta_pct": 16934.500896736845,
+  "change_start_residual_z": 15.930638389221095,
+  "sequence_services": [
+    "frontend",
+    "cart",
+    "recommendation",
+    "ad",
+    "checkout"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S02_payment_failure_run_04 family_id S02_payment_failure region us slot_top_service checkout slot_top_metric error_ratio slot_top_delta_pct +42364.83% slot_top_residual_z 39.85 change_start_service checkout change_start_metric error_ratio change_start_offset -10.3m change_start_delta_pct +16934.50% change_start_residual_z 15.93 sequence_rank1_service frontend sequence_rank1_metric request_count sequence_rank1_offset -10.8m sequence_rank2_service cart sequence_rank2_metric request_count sequence_rank2_offset -10.8m sequence_rank3_service recommendation sequence_rank3_metric request_count sequence_rank3_offset -10.8m sequence_rank4_service ad sequence_rank4_metric request_count sequence_rank4_offset -10.8m sequence_rank5_service checkout sequence_rank5_metric request_count sequence_rank5_offset -10.8m slot_rank1_service checkout slot_rank1_metric error_ratio slot_rank2_service payment slot_rank2_metric pod_restart_count slot_rank3_service checkout slot_rank3_metric dependency_error_ratio slot_rank4_service checkout slot_rank4_metric latency_p95 slot_rank5_service payment slot_rank5_metric memory_usage",
+  "line_text": "rank 1 service frontend metric request_count earliest_residual_z -0.42 peak_residual_z 3.05 rank 2 service cart metric request_count earliest_residual_z -0.42 peak_residual_z 2.68 rank 3 service recommendation metric request_count earliest_residual_z -0.42 peak_residual_z 3.66 rank 4 service ad metric request_count earliest_residual_z -0.42 peak_residual_z 3.30 rank 5 service checkout metric request_count earliest_residual_z -0.42 peak_residual_z 3.38"
+}

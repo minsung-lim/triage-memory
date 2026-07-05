@@ -1,0 +1,19 @@
+{
+  "incident_id": "S10_productcatalog_failure_run_16",
+  "family_id": "S10_productcatalog_failure",
+  "tier": "rare",
+  "region": "eu",
+  "preferred_hour_kst": 7,
+  "scheduled_hour_kst": 7,
+  "scheduled_anchor_kst": "2026-09-05T07:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "stable_order",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "product-catalog",
+  "root_metric_truth": "pod_restart_count",
+  "expected_earliest": "product-catalog/pod_restart_count",
+  "expected_dominant": "frontend/http_5xx_ratio"
+}

@@ -1,0 +1,19 @@
+{
+  "incident_id": "S22_image_provider_memory_stress_run_05",
+  "family_id": "S22_image_provider_memory_stress",
+  "tier": "candidate200_30min_extension",
+  "region": "us",
+  "preferred_hour_kst": 9,
+  "scheduled_hour_kst": 9,
+  "scheduled_anchor_kst": "2027-04-26T09:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "candidate200_30min_extension",
+  "order_competition_group": "candidate200_new_family_extension",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "image-provider",
+  "root_metric_truth": "memory_usage",
+  "expected_earliest": "image-provider/memory_usage",
+  "expected_dominant": "image-provider/memory_usage"
+}

@@ -1,0 +1,241 @@
+case_public_id,field_name,service_alias,service_layer,metric_family,direction,magnitude_bucket,relative_offset_bucket,order_rank,serialized_expression
+O01,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O01,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O01,earliest_abnormal,S02,storage_dependency,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S02 storage_dependency cpu_usage up medium
+O01,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S02 storage_dependency cpu_usage
+O01,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S03 storage_dependency cpu_usage
+O01,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,3,3 S01 application_service latency_p95
+O01,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,4,4 S04 application_service latency_p95
+O01,change_order,S04,application_service,latency_p99,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S04 application_service latency_p99
+O02,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O02,maximum_change,S04,application_service,http_5xx_count,up,extreme,not_applicable,,S04 application_service http_5xx_count up extreme
+O02,earliest_abnormal,S02,storage_dependency,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S02 storage_dependency cpu_usage up medium
+O02,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S02 storage_dependency cpu_usage
+O02,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S03 storage_dependency cpu_usage
+O02,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,3,3 S01 application_service latency_p95
+O02,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,4,4 S04 application_service latency_p95
+O02,change_order,S04,application_service,latency_p99,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S04 application_service latency_p99
+O03,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O03,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O03,earliest_abnormal,S03,storage_dependency,cpu_usage,up,large,anchor-30m_to_anchor-20m,,S03 storage_dependency cpu_usage up large
+O03,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S03 storage_dependency cpu_usage
+O03,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S06 datastore db_cpu_utilization
+O03,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,3,3 S01 application_service latency_p95
+O03,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,4,4 S04 application_service latency_p95
+O03,change_order,S04,application_service,latency_p99,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S04 application_service latency_p99
+O04,alert_message,S01,application_service,db_read_iops,alert,not_applicable,alert_anchor,,S01 application_service db_read_iops alert
+O04,maximum_change,S05,application_service,http_4xx_count,down,extreme,not_applicable,,S05 application_service http_4xx_count down extreme
+O04,earliest_abnormal,S01,application_service,latency_p95,down,extreme,anchor-10m_to_anchor,,S01 application_service latency_p95 down extreme
+O04,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,1,1 S01 application_service latency_p95
+O04,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,2,2 S04 application_service latency_p95
+O04,change_order,S04,application_service,latency_p99,not_applicable,not_applicable,anchor-10m_to_anchor,3,3 S04 application_service latency_p99
+O04,change_order,S01,application_service,latency_p99,not_applicable,not_applicable,anchor-10m_to_anchor,4,4 S01 application_service latency_p99
+O04,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S06 datastore db_cpu_utilization
+O05,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O05,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O05,earliest_abnormal,S04,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S04 application_service cpu_usage up medium
+O05,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S04 application_service cpu_usage
+O05,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S01 application_service cpu_usage
+O05,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S02 storage_dependency cpu_usage
+O05,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S03 storage_dependency cpu_usage
+O05,change_order,S04,application_service,latency_p99,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S04 application_service latency_p99
+O06,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O06,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O06,earliest_abnormal,S03,storage_dependency,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S03 storage_dependency cpu_usage up medium
+O06,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S03 storage_dependency cpu_usage
+O06,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S04 application_service cpu_usage
+O06,change_order,S04,application_service,latency_p99,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S04 application_service latency_p99
+O06,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S04 application_service latency_p95
+O06,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S01 application_service latency_p95
+O07,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O07,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O07,earliest_abnormal,S06,datastore,db_cpu_utilization,down,medium,anchor-30m_to_anchor-20m,,S06 datastore db_cpu_utilization down medium
+O07,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S06 datastore db_cpu_utilization
+O07,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S04 application_service cpu_usage
+O07,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S02 storage_dependency cpu_usage
+O07,change_order,S04,application_service,http_5xx_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S04 application_service http_5xx_count
+O07,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,5,5 S03 storage_dependency cpu_usage
+O08,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O08,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O08,earliest_abnormal,S04,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S04 application_service cpu_usage up medium
+O08,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S04 application_service cpu_usage
+O08,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S06 datastore db_cpu_utilization
+O08,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S01 application_service cpu_usage
+O08,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S03 storage_dependency cpu_usage
+O08,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S01 application_service latency_p95
+O09,alert_message,S01,application_service,latency_p95,alert,not_applicable,alert_anchor,,S01 application_service latency_p95 alert
+O09,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O09,earliest_abnormal,S06,datastore,db_cpu_utilization,down,medium,anchor-30m_to_anchor-20m,,S06 datastore db_cpu_utilization down medium
+O09,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S06 datastore db_cpu_utilization
+O09,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S04 application_service cpu_usage
+O09,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S02 storage_dependency cpu_usage
+O09,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S03 storage_dependency cpu_usage
+O09,change_order,S04,application_service,http_5xx_count,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S04 application_service http_5xx_count
+O10,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O10,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O10,earliest_abnormal,S01,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S01 application_service cpu_usage up medium
+O10,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S01 application_service cpu_usage
+O10,change_order,S01,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S01 application_service request_count
+O10,change_order,S02,storage_dependency,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S02 storage_dependency request_count
+O10,change_order,S05,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S05 application_service request_count
+O10,change_order,S04,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,5,5 S04 application_service request_count
+O11,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O11,maximum_change,S01,application_service,latency_p95,up,extreme,not_applicable,,S01 application_service latency_p95 up extreme
+O11,earliest_abnormal,S01,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S01 application_service cpu_usage up medium
+O11,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S01 application_service cpu_usage
+O11,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S02 storage_dependency cpu_usage
+O11,change_order,S01,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S01 application_service request_count
+O11,change_order,S02,storage_dependency,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S02 storage_dependency request_count
+O11,change_order,S04,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,5,5 S04 application_service request_count
+O12,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O12,maximum_change,S01,application_service,http_5xx_count,up,extreme,not_applicable,,S01 application_service http_5xx_count up extreme
+O12,earliest_abnormal,S02,storage_dependency,request_count,down,medium,anchor-30m_to_anchor-20m,,S02 storage_dependency request_count down medium
+O12,change_order,S02,storage_dependency,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S02 storage_dependency request_count
+O12,change_order,S04,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S04 application_service request_count
+O12,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S06 datastore db_cpu_utilization
+O12,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S01 application_service cpu_usage
+O12,change_order,S03,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S03 storage_dependency cpu_usage
+O13,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O13,maximum_change,S01,application_service,http_5xx_count,down,extreme,not_applicable,,S01 application_service http_5xx_count down extreme
+O13,earliest_abnormal,S05,application_service,cpu_usage,down,medium,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage down medium
+O13,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O13,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S01 application_service cpu_usage
+O13,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S04 application_service cpu_usage
+O13,change_order,S02,storage_dependency,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S02 storage_dependency request_count
+O13,change_order,S04,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,5,5 S04 application_service request_count
+O14,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O14,maximum_change,S03,storage_dependency,http_4xx_count,up,extreme,not_applicable,,S03 storage_dependency http_4xx_count up extreme
+O14,earliest_abnormal,S05,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage up medium
+O14,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O14,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S02 storage_dependency cpu_usage
+O14,change_order,S04,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S04 application_service request_count
+O14,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S01 application_service cpu_usage
+O14,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S06 datastore db_cpu_utilization
+O15,alert_message,S01,application_service,resource_cpu,alert,not_applicable,alert_anchor,,S01 application_service resource_cpu alert
+O15,maximum_change,S02,storage_dependency,response_count,down,extreme,not_applicable,,S02 storage_dependency response_count down extreme
+O15,earliest_abnormal,S04,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S04 application_service cpu_usage up medium
+O15,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S04 application_service cpu_usage
+O15,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S01 application_service cpu_usage
+O15,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S06 datastore db_cpu_utilization
+O15,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S05 application_service cpu_usage
+O15,change_order,S05,application_service,request_count,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S05 application_service request_count
+O16,alert_message,S01,application_service,resource_cpu,alert,not_applicable,alert_anchor,,S01 application_service resource_cpu alert
+O16,maximum_change,S01,application_service,response_count,down,extreme,not_applicable,,S01 application_service response_count down extreme
+O16,earliest_abnormal,S05,application_service,cpu_usage,up,large,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage up large
+O16,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O16,change_order,S05,application_service,request_count,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S05 application_service request_count
+O16,change_order,S02,storage_dependency,http_5xx_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S02 storage_dependency http_5xx_count
+O16,change_order,S03,storage_dependency,http_5xx_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S03 storage_dependency http_5xx_count
+O16,change_order,S05,application_service,http_5xx_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,5,5 S05 application_service http_5xx_count
+O17,alert_message,S01,application_service,http_4xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_4xx_ratio alert
+O17,maximum_change,S01,application_service,http_4xx_count,down,extreme,not_applicable,,S01 application_service http_4xx_count down extreme
+O17,earliest_abnormal,S01,application_service,request_count,up,medium,anchor-30m_to_anchor-20m,,S01 application_service request_count up medium
+O17,change_order,S01,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S01 application_service request_count
+O17,change_order,S02,storage_dependency,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S02 storage_dependency request_count
+O17,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S06 datastore db_cpu_utilization
+O17,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S04 application_service cpu_usage
+O17,change_order,S05,application_service,latency_p99,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S05 application_service latency_p99
+O18,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O18,maximum_change,S03,storage_dependency,http_2xx_count,down,extreme,not_applicable,,S03 storage_dependency http_2xx_count down extreme
+O18,earliest_abnormal,S05,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage up medium
+O18,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O18,change_order,S03,storage_dependency,latency_p95,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S03 storage_dependency latency_p95
+O18,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S06 datastore db_cpu_utilization
+O18,change_order,S05,application_service,latency_p99,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S05 application_service latency_p99
+O18,change_order,S04,application_service,http_5xx_count,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S04 application_service http_5xx_count
+O19,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O19,maximum_change,S04,application_service,http_5xx_count,up,extreme,not_applicable,,S04 application_service http_5xx_count up extreme
+O19,earliest_abnormal,S03,storage_dependency,http_4xx_count,up,extreme,anchor-30m_to_anchor-20m,,S03 storage_dependency http_4xx_count up extreme
+O19,change_order,S03,storage_dependency,http_4xx_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S03 storage_dependency http_4xx_count
+O19,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S05 application_service cpu_usage
+O19,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S04 application_service cpu_usage
+O19,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S06 datastore db_cpu_utilization
+O19,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S05 application_service memory_usage
+O20,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O20,maximum_change,S02,storage_dependency,http_5xx_count,up,extreme,not_applicable,,S02 storage_dependency http_5xx_count up extreme
+O20,earliest_abnormal,S05,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage up medium
+O20,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O20,change_order,S04,application_service,http_5xx_count,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S04 application_service http_5xx_count
+O20,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S05 application_service memory_usage
+O20,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,alert_anchor,4,4 S04 application_service latency_p95
+O20,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,alert_anchor,5,5 S01 application_service latency_p95
+O21,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O21,maximum_change,S03,storage_dependency,http_4xx_count,up,extreme,not_applicable,,S03 storage_dependency http_4xx_count up extreme
+O21,earliest_abnormal,S04,application_service,request_count,down,medium,anchor-30m_to_anchor-20m,,S04 application_service request_count down medium
+O21,change_order,S04,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S04 application_service request_count
+O21,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S06 datastore db_cpu_utilization
+O21,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S05 application_service memory_usage
+O21,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S04 application_service cpu_usage
+O21,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S05 application_service cpu_usage
+O22,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O22,maximum_change,S04,application_service,latency_p95,up,extreme,not_applicable,,S04 application_service latency_p95 up extreme
+O22,earliest_abnormal,S05,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage up medium
+O22,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O22,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S04 application_service cpu_usage
+O22,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S01 application_service cpu_usage
+O22,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S05 application_service memory_usage
+O22,change_order,S03,storage_dependency,http_4xx_count,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S03 storage_dependency http_4xx_count
+O23,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O23,maximum_change,S04,application_service,latency_p95,down,extreme,not_applicable,,S04 application_service latency_p95 down extreme
+O23,earliest_abnormal,S05,application_service,latency_p99,up,medium,anchor-30m_to_anchor-20m,,S05 application_service latency_p99 up medium
+O23,change_order,S05,application_service,latency_p99,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service latency_p99
+O23,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S05 application_service cpu_usage
+O23,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S04 application_service cpu_usage
+O23,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S05 application_service memory_usage
+O23,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,alert_anchor,5,5 S04 application_service latency_p95
+O24,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O24,maximum_change,S04,application_service,latency_p95,down,extreme,not_applicable,,S04 application_service latency_p95 down extreme
+O24,earliest_abnormal,S06,datastore,db_cpu_utilization,up,medium,anchor-30m_to_anchor-20m,,S06 datastore db_cpu_utilization up medium
+O24,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S06 datastore db_cpu_utilization
+O24,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S05 application_service cpu_usage
+O24,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S05 application_service memory_usage
+O24,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,alert_anchor,4,4 S04 application_service latency_p95
+O24,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,alert_anchor,5,5 S01 application_service latency_p95
+O25,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O25,maximum_change,S04,application_service,http_5xx_count,down,extreme,not_applicable,,S04 application_service http_5xx_count down extreme
+O25,earliest_abnormal,S05,application_service,cpu_usage,up,medium,anchor-20m_to_anchor-10m,,S05 application_service cpu_usage up medium
+O25,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,1,1 S05 application_service cpu_usage
+O25,change_order,S05,application_service,request_count,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S05 application_service request_count
+O25,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S01 application_service cpu_usage
+O25,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S05 application_service memory_usage
+O25,change_order,S04,application_service,http_5xx_count,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S04 application_service http_5xx_count
+O26,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O26,maximum_change,S03,storage_dependency,http_4xx_count,up,extreme,not_applicable,,S03 storage_dependency http_4xx_count up extreme
+O26,earliest_abnormal,S05,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage up medium
+O26,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O26,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,2,2 S04 application_service cpu_usage
+O26,change_order,S05,application_service,memory_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,3,3 S05 application_service memory_usage
+O26,change_order,S03,storage_dependency,http_4xx_count,not_applicable,not_applicable,anchor-10m_to_anchor,4,4 S03 storage_dependency http_4xx_count
+O26,change_order,S04,application_service,latency_p95,not_applicable,not_applicable,alert_anchor,5,5 S04 application_service latency_p95
+O27,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O27,maximum_change,S04,application_service,http_5xx_count,down,extreme,not_applicable,,S04 application_service http_5xx_count down extreme
+O27,earliest_abnormal,S05,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S05 application_service cpu_usage up medium
+O27,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S05 application_service cpu_usage
+O27,change_order,S04,application_service,http_5xx_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S04 application_service http_5xx_count
+O27,change_order,S05,application_service,latency_p99,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S05 application_service latency_p99
+O27,change_order,S05,application_service,request_count,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S05 application_service request_count
+O27,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S01 application_service cpu_usage
+O28,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O28,maximum_change,S03,storage_dependency,http_4xx_count,up,extreme,not_applicable,,S03 storage_dependency http_4xx_count up extreme
+O28,earliest_abnormal,S04,application_service,request_count,down,medium,anchor-30m_to_anchor-20m,,S04 application_service request_count down medium
+O28,change_order,S04,application_service,request_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S04 application_service request_count
+O28,change_order,S06,datastore,db_cpu_utilization,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S06 datastore db_cpu_utilization
+O28,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S05 application_service cpu_usage
+O28,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-20m_to_anchor-10m,4,4 S04 application_service cpu_usage
+O28,change_order,S03,storage_dependency,http_4xx_count,not_applicable,not_applicable,anchor-20m_to_anchor-10m,5,5 S03 storage_dependency http_4xx_count
+O29,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O29,maximum_change,S05,application_service,http_2xx_count,down,extreme,not_applicable,,S05 application_service http_2xx_count down extreme
+O29,earliest_abnormal,S02,storage_dependency,latency_p95,up,medium,anchor-30m_to_anchor-20m,,S02 storage_dependency latency_p95 up medium
+O29,change_order,S02,storage_dependency,latency_p95,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S02 storage_dependency latency_p95
+O29,change_order,S04,application_service,http_5xx_count,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S04 application_service http_5xx_count
+O29,change_order,S05,application_service,latency_p99,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S05 application_service latency_p99
+O29,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,4,4 S05 application_service cpu_usage
+O29,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,5,5 S01 application_service cpu_usage
+O30,alert_message,S01,application_service,http_5xx_ratio,alert,not_applicable,alert_anchor,,S01 application_service http_5xx_ratio alert
+O30,maximum_change,S01,application_service,latency_p99,down,extreme,not_applicable,,S01 application_service latency_p99 down extreme
+O30,earliest_abnormal,S04,application_service,cpu_usage,up,medium,anchor-30m_to_anchor-20m,,S04 application_service cpu_usage up medium
+O30,change_order,S04,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,1,1 S04 application_service cpu_usage
+O30,change_order,S05,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,2,2 S05 application_service cpu_usage
+O30,change_order,S01,application_service,cpu_usage,not_applicable,not_applicable,anchor-30m_to_anchor-20m,3,3 S01 application_service cpu_usage
+O30,change_order,S02,storage_dependency,cpu_usage,not_applicable,not_applicable,anchor-10m_to_anchor,4,4 S02 storage_dependency cpu_usage
+O30,change_order,S01,application_service,latency_p95,not_applicable,not_applicable,anchor-10m_to_anchor,5,5 S01 application_service latency_p95

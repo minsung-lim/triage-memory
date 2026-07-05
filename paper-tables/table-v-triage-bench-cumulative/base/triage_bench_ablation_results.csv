@@ -1,0 +1,6 @@
+view,input_condition,first_service_at1,service_metric_at1,avg_tied_top_score_records,notes
+all_200,alert_message_only,71/200,61/200,13.19,paper baseline
+all_200,through_maximum_change,155/200,146/200,12.38,maximum pre-alert movement selector
+all_200,through_earliest_abnormal,159/200,149/200,8.02,earliest abnormal service-metric selector
+all_200,four_field_with_order,155/200,153/200,1.04,paper four-field representation
+prior_same_family_177,four_field_with_order,143/177,141/177,,cases with at least one prior same-family memory

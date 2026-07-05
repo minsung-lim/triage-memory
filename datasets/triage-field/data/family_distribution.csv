@@ -1,0 +1,9 @@
+family_public_id,case_count,family_type,four_field_family_hit_count,four_field_first_service_hit_count
+F01,9,recurring,9,9
+F02,5,recurring,5,5
+F03,2,recurring,2,2
+F04,7,recurring,4,4
+F05,4,recurring,3,3
+F06,1,singleton,0,1
+F07,1,singleton,0,0
+F08,1,singleton,0,0

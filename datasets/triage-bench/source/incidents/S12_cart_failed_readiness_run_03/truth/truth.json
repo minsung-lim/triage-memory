@@ -1,0 +1,19 @@
+{
+  "incident_id": "S12_cart_failed_readiness_run_03",
+  "family_id": "S12_cart_failed_readiness",
+  "tier": "rare",
+  "region": "us",
+  "preferred_hour_kst": 0,
+  "scheduled_hour_kst": 8,
+  "scheduled_anchor_kst": "2026-04-17T08:00:00+09:00",
+  "time_pattern_label": "shifted_window",
+  "sequence_variation_label": "near_tie_secondary_first",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "normal",
+  "intensity": "high",
+  "duration_min": 5,
+  "root_service_truth": "cart",
+  "root_metric_truth": "pod_running_count",
+  "expected_earliest": "cart/pod_running_count",
+  "expected_dominant": "frontend/http_5xx_ratio"
+}

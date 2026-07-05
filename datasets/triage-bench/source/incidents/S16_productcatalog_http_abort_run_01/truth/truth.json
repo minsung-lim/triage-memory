@@ -1,0 +1,19 @@
+{
+  "incident_id": "S16_productcatalog_http_abort_run_01",
+  "family_id": "S16_productcatalog_http_abort",
+  "tier": "singleton",
+  "region": "eu",
+  "preferred_hour_kst": 7,
+  "scheduled_hour_kst": 7,
+  "scheduled_anchor_kst": "2026-04-24T07:00:00+09:00",
+  "time_pattern_label": "singleton_window",
+  "sequence_variation_label": "singleton_order",
+  "order_competition_group": "competing_primary_metrics",
+  "traffic_bucket": "normal",
+  "intensity": "mild",
+  "duration_min": 5,
+  "root_service_truth": "product-catalog",
+  "root_metric_truth": "error_ratio",
+  "expected_earliest": "product-catalog/error_ratio",
+  "expected_dominant": "frontend/http_5xx_ratio"
+}

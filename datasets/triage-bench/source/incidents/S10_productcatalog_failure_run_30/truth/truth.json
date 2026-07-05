@@ -1,0 +1,19 @@
+{
+  "incident_id": "S10_productcatalog_failure_run_30",
+  "family_id": "S10_productcatalog_failure",
+  "tier": "order_expansion_30min",
+  "region": "ap",
+  "preferred_hour_kst": 21,
+  "scheduled_hour_kst": 21,
+  "scheduled_anchor_kst": "2027-01-22T21:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "order_expansion_30min",
+  "order_competition_group": "productcatalog_restart_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "product-catalog",
+  "root_metric_truth": "pod_restart_count",
+  "expected_earliest": "product-catalog/pod_restart_count",
+  "expected_dominant": "product-catalog/pod_restart_count"
+}

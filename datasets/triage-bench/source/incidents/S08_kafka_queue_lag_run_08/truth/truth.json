@@ -1,0 +1,19 @@
+{
+  "incident_id": "S08_kafka_queue_lag_run_08",
+  "family_id": "S08_kafka_queue_lag",
+  "tier": "medium",
+  "region": "us",
+  "preferred_hour_kst": 0,
+  "scheduled_hour_kst": 0,
+  "scheduled_anchor_kst": "2026-03-27T00:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "near_tie_primary_first",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "kafka",
+  "root_metric_truth": "pod_restart_count",
+  "expected_earliest": "kafka/pod_restart_count",
+  "expected_dominant": "frontend/latency_p95"
+}

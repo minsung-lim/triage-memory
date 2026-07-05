@@ -1,0 +1,19 @@
+{
+  "incident_id": "S09_payment_dns_fault_run_03",
+  "family_id": "S09_payment_dns_fault",
+  "tier": "rare",
+  "region": "us",
+  "preferred_hour_kst": 13,
+  "scheduled_hour_kst": 21,
+  "scheduled_anchor_kst": "2026-03-30T21:00:00+09:00",
+  "time_pattern_label": "shifted_window",
+  "sequence_variation_label": "near_tie_secondary_first",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "payment",
+  "root_metric_truth": "cpu_usage",
+  "expected_earliest": "payment/cpu_usage",
+  "expected_dominant": "frontend/http_5xx_ratio"
+}

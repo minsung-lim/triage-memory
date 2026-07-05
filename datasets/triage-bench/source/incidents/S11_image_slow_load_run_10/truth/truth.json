@@ -1,0 +1,19 @@
+{
+  "incident_id": "S11_image_slow_load_run_10",
+  "family_id": "S11_image_slow_load",
+  "tier": "rare",
+  "region": "us",
+  "preferred_hour_kst": 20,
+  "scheduled_hour_kst": 20,
+  "scheduled_anchor_kst": "2026-08-27T20:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "stable_order",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "frontend",
+  "root_metric_truth": "latency_p95",
+  "expected_earliest": "frontend/latency_p95",
+  "expected_dominant": "frontend/latency_p95"
+}

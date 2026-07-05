@@ -1,0 +1,41 @@
+{
+  "incident_id": "S04_productcatalog_network_delay_run_11",
+  "family_id": "S04_productcatalog_network_delay",
+  "region": "eu",
+  "scheduled_anchor_kst": "2026-09-13T07:00:00+09:00",
+  "preferred_hour_kst": 7,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "product-catalog",
+  "alarm_family": "cpu_usage",
+  "slot_top_service": "product-catalog",
+  "slot_top_metric_family": "cpu_usage",
+  "slot_top_delta_pct": 86488.58647721302,
+  "slot_top_residual_z": 813.6669961875376,
+  "change_start_service": "product-catalog",
+  "change_start_metric_family": "cpu_usage",
+  "change_start_delta_pct": 20484.906953634945,
+  "change_start_residual_z": 192.71783002878428,
+  "sequence_services": [
+    "kafka",
+    "payment",
+    "cart",
+    "email",
+    "frontend"
+  ],
+  "sequence_metrics": [
+    "queue_lag",
+    "cpu_usage",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S04_productcatalog_network_delay_run_11 family_id S04_productcatalog_network_delay region eu slot_top_service product-catalog slot_top_metric cpu_usage slot_top_delta_pct +86488.59% slot_top_residual_z 813.67 change_start_service product-catalog change_start_metric cpu_usage change_start_offset -9.0m change_start_delta_pct +20484.91% change_start_residual_z 192.72 sequence_rank1_service kafka sequence_rank1_metric queue_lag sequence_rank1_offset -10.0m sequence_rank2_service payment sequence_rank2_metric cpu_usage sequence_rank2_offset -10.0m sequence_rank3_service cart sequence_rank3_metric request_count sequence_rank3_offset -10.0m sequence_rank4_service email sequence_rank4_metric request_count sequence_rank4_offset -10.0m sequence_rank5_service frontend sequence_rank5_metric request_count sequence_rank5_offset -10.0m slot_rank1_service product-catalog slot_rank1_metric cpu_usage slot_rank2_service product-catalog slot_rank2_metric latency_p95 slot_rank3_service recommendation slot_rank3_metric latency_p95 slot_rank4_service frontend slot_rank4_metric latency_p95 slot_rank5_service recommendation slot_rank5_metric dependency_error_ratio",
+  "line_text": "rank 1 service kafka metric queue_lag earliest_residual_z 1.44 peak_residual_z 3.97 rank 2 service payment metric cpu_usage earliest_residual_z 4.35 peak_residual_z 4.35 rank 3 service cart metric request_count earliest_residual_z -0.36 peak_residual_z 6.62 rank 4 service email metric request_count earliest_residual_z -0.31 peak_residual_z 4.68 rank 5 service frontend metric request_count earliest_residual_z -0.49 peak_residual_z 4.49"
+}

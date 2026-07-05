@@ -1,0 +1,19 @@
+{
+  "incident_id": "S04_productcatalog_network_delay_run_05",
+  "family_id": "S04_productcatalog_network_delay",
+  "tier": "frequent",
+  "region": "eu",
+  "preferred_hour_kst": 7,
+  "scheduled_hour_kst": 6,
+  "scheduled_anchor_kst": "2026-02-18T06:00:00+09:00",
+  "time_pattern_label": "nearby_window",
+  "sequence_variation_label": "near_tie_primary_first",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "product-catalog",
+  "root_metric_truth": "cpu_usage",
+  "expected_earliest": "product-catalog/cpu_usage",
+  "expected_dominant": "frontend/latency_p95"
+}

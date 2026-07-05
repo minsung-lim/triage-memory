@@ -1,0 +1,7 @@
+service_alias,service_layer,mapping_status
+S01,application_service,actual_name_removed
+S02,storage_dependency,actual_name_removed
+S03,storage_dependency,actual_name_removed
+S04,application_service,actual_name_removed
+S05,application_service,actual_name_removed
+S06,datastore,actual_name_removed

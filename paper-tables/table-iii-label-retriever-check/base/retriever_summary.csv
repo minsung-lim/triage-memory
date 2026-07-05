@@ -1,0 +1,29 @@
+dataset,retriever,representation,field_set_label,n,family_at1,first_service_at1,service_metric_at1,sre_first_service_at1,tie_policy,avg_top_tie_size
+Triage-Field,TF-IDF,alert_message_only,alert message only,30,18/30,19/30,,17/30,deterministic tie-break after equal-score candidates,
+Triage-Field,TF-IDF,through_earliest_abnormal,+ earliest abnormal,30,19/30,20/30,,20/30,deterministic tie-break after equal-score candidates,
+Triage-Field,TF-IDF,four_field_with_order,+ change order,30,23/30,24/30,,20/30,deterministic tie-break after equal-score candidates,
+Triage-Bench,TF-IDF,alert_message_only,alert_message_only,200,145/200,147/200,145/200,,fixed tie break after equal-score records,13.19
+Triage-Bench,TF-IDF,through_maximum_change,through_maximum_change,200,142/200,144/200,142/200,,fixed tie break after equal-score records,12.38
+Triage-Bench,TF-IDF,through_earliest_abnormal,through_earliest_abnormal,200,152/200,157/200,152/200,,fixed tie break after equal-score records,8.02
+Triage-Bench,TF-IDF,four_field_with_order,four_field_with_order,200,153/200,155/200,153/200,,fixed tie break after equal-score records,1.04
+Triage-Field,BM25,alert_message_only,alert message only,30,17/30,17/30,,17/30,deterministic tie-break after equal-score candidates,
+Triage-Field,BM25,through_earliest_abnormal,+ earliest abnormal,30,20/30,21/30,,19/30,deterministic tie-break after equal-score candidates,
+Triage-Field,BM25,four_field_with_order,+ change order,30,21/30,22/30,,20/30,deterministic tie-break after equal-score candidates,
+Triage-Bench,BM25,alert_message_only,alert_message_only,200,145/200,147/200,145/200,,fixed tie break after equal-score records,13.29
+Triage-Bench,BM25,through_maximum_change,through_maximum_change,200,142/200,144/200,142/200,,fixed tie break after equal-score records,12.27
+Triage-Bench,BM25,through_earliest_abnormal,through_earliest_abnormal,200,152/200,157/200,152/200,,fixed tie break after equal-score records,7.98
+Triage-Bench,BM25,four_field_with_order,four_field_with_order,200,157/200,159/200,157/200,,fixed tie break after equal-score records,1.04
+Triage-Field,Dense MiniLM,alert_message_only,alert message only,30,19/30,20/30,,18/30,deterministic tie-break after equal-score candidates,
+Triage-Field,Dense MiniLM,through_earliest_abnormal,+ earliest abnormal,30,19/30,21/30,,17/30,deterministic tie-break after equal-score candidates,
+Triage-Field,Dense MiniLM,four_field_with_order,+ change order,30,20/30,21/30,,17/30,deterministic tie-break after equal-score candidates,
+Triage-Bench,Dense MiniLM,alert_message_only,alert_message_only,200,145/200,147/200,145/200,,fixed tie break after equal-score records,13.15
+Triage-Bench,Dense MiniLM,through_maximum_change,through_maximum_change,200,143/200,145/200,143/200,,fixed tie break after equal-score records,12.27
+Triage-Bench,Dense MiniLM,through_earliest_abnormal,through_earliest_abnormal,200,154/200,159/200,154/200,,fixed tie break after equal-score records,7.92
+Triage-Bench,Dense MiniLM,four_field_with_order,four_field_with_order,200,156/200,160/200,156/200,,fixed tie break after equal-score records,7.84
+Triage-Field,ColBERT,alert_message_only,alert message only,30,18/30,19/30,,18/30,deterministic tie-break after equal-score candidates,
+Triage-Field,ColBERT,through_earliest_abnormal,+ earliest abnormal,30,17/30,18/30,,15/30,deterministic tie-break after equal-score candidates,
+Triage-Field,ColBERT,four_field_with_order,+ change order,30,18/30,18/30,,10/30,deterministic tie-break after equal-score candidates,
+Triage-Bench,ColBERT,alert_message_only,alert_message_only,200,145/200,147/200,145/200,,fixed tie break after equal-score records,13.15
+Triage-Bench,ColBERT,through_maximum_change,through_maximum_change,200,138/200,140/200,138/200,,fixed tie break after equal-score records,11.63
+Triage-Bench,ColBERT,through_earliest_abnormal,through_earliest_abnormal,200,150/200,155/200,150/200,,fixed tie break after equal-score records,7.70
+Triage-Bench,ColBERT,four_field_with_order,four_field_with_order,200,151/200,155/200,151/200,,fixed tie break after equal-score records,7.64

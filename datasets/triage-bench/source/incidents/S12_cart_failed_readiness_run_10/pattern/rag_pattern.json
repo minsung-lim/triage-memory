@@ -1,0 +1,41 @@
+{
+  "incident_id": "S12_cart_failed_readiness_run_10",
+  "family_id": "S12_cart_failed_readiness",
+  "region": "us",
+  "scheduled_anchor_kst": "2026-08-29T00:00:00+09:00",
+  "preferred_hour_kst": 0,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "kafka",
+  "alarm_family": "queue_lag",
+  "slot_top_service": "kafka",
+  "slot_top_metric_family": "queue_lag",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 22000000.0,
+  "change_start_service": "email",
+  "change_start_metric_family": "cpu_usage",
+  "change_start_delta_pct": 33.30731446354878,
+  "change_start_residual_z": 1.707457288285379,
+  "sequence_services": [
+    "email",
+    "cart",
+    "ad",
+    "ad",
+    "recommendation"
+  ],
+  "sequence_metrics": [
+    "latency_p95",
+    "latency_p95",
+    "request_count",
+    "latency_p95",
+    "request_count"
+  ],
+  "service_text": "incident_id S12_cart_failed_readiness_run_10 family_id S12_cart_failed_readiness region us slot_top_service kafka slot_top_metric queue_lag slot_top_delta_pct na slot_top_residual_z 22000000.00 change_start_service email change_start_metric cpu_usage change_start_offset -9.0m change_start_delta_pct +33.31% change_start_residual_z 1.71 sequence_rank1_service email sequence_rank1_metric latency_p95 sequence_rank1_offset -9.3m sequence_rank2_service cart sequence_rank2_metric latency_p95 sequence_rank2_offset -9.3m sequence_rank3_service ad sequence_rank3_metric request_count sequence_rank3_offset -9.3m sequence_rank4_service ad sequence_rank4_metric latency_p95 sequence_rank4_offset -9.3m sequence_rank5_service recommendation sequence_rank5_metric request_count sequence_rank5_offset -9.3m slot_rank1_service kafka slot_rank1_metric queue_lag slot_rank2_service email slot_rank2_metric cpu_usage slot_rank3_service ad slot_rank3_metric dependency_error_ratio slot_rank4_service recommendation slot_rank4_metric dependency_error_ratio slot_rank5_service frontend slot_rank5_metric latency_p95",
+  "line_text": "rank 1 service email metric latency_p95 earliest_residual_z -0.55 peak_residual_z 1.41 rank 2 service cart metric latency_p95 earliest_residual_z 1.34 peak_residual_z 1.79 rank 3 service ad metric request_count earliest_residual_z 2.21 peak_residual_z 9.92 rank 4 service ad metric latency_p95 earliest_residual_z -1.22 peak_residual_z -1.22 rank 5 service recommendation metric request_count earliest_residual_z 1.93 peak_residual_z 6.39"
+}

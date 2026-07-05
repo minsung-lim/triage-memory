@@ -1,0 +1,41 @@
+{
+  "incident_id": "S02_payment_failure_run_09",
+  "family_id": "S02_payment_failure",
+  "region": "eu",
+  "scheduled_anchor_kst": "2026-02-02T13:00:00+09:00",
+  "preferred_hour_kst": 13,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "near_tie_secondary_first",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "payment",
+  "alarm_family": "pod_restart_count",
+  "slot_top_service": "payment",
+  "slot_top_metric_family": "pod_restart_count",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 3000000.0,
+  "change_start_service": "payment",
+  "change_start_metric_family": "pod_restart_count",
+  "change_start_delta_pct": NaN,
+  "change_start_residual_z": 2000000.0,
+  "sequence_services": [
+    "payment",
+    "frontend",
+    "frontend",
+    "frontend",
+    "frontend"
+  ],
+  "sequence_metrics": [
+    "pod_restart_count",
+    "error_ratio",
+    "http_5xx_ratio",
+    "dependency_error_ratio",
+    "request_count"
+  ],
+  "service_text": "incident_id S02_payment_failure_run_09 family_id S02_payment_failure region eu slot_top_service payment slot_top_metric pod_restart_count slot_top_delta_pct na slot_top_residual_z 3000000.00 change_start_service payment change_start_metric pod_restart_count change_start_offset -10.7m change_start_delta_pct na change_start_residual_z 2000000.00 sequence_rank1_service payment sequence_rank1_metric pod_restart_count sequence_rank1_offset -10.7m sequence_rank2_service frontend sequence_rank2_metric error_ratio sequence_rank2_offset -10.7m sequence_rank3_service frontend sequence_rank3_metric http_5xx_ratio sequence_rank3_offset -10.7m sequence_rank4_service frontend sequence_rank4_metric dependency_error_ratio sequence_rank4_offset -10.7m sequence_rank5_service frontend sequence_rank5_metric request_count sequence_rank5_offset -10.7m slot_rank1_service payment slot_rank1_metric pod_restart_count slot_rank2_service checkout slot_rank2_metric error_ratio slot_rank3_service frontend slot_rank3_metric error_ratio slot_rank4_service checkout slot_rank4_metric dependency_error_ratio slot_rank5_service frontend slot_rank5_metric http_5xx_ratio",
+  "line_text": "rank 1 service payment metric pod_restart_count earliest_residual_z 2000000.00 peak_residual_z 3000000.00 rank 2 service frontend metric error_ratio earliest_residual_z 1276.67 peak_residual_z 59120.97 rank 3 service frontend metric http_5xx_ratio earliest_residual_z 3846.42 peak_residual_z 54823.86 rank 4 service frontend metric dependency_error_ratio earliest_residual_z 853.90 peak_residual_z 41328.29 rank 5 service frontend metric request_count earliest_residual_z 2.59 peak_residual_z 3.15"
+}

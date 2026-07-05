@@ -1,0 +1,24 @@
+family_id,cases,case_group,target_service,target_metric,duration_min_values,regions,injection_details,runtime_profile_missing_cases,example_case_id
+S01_ad_high_cpu,10,direct symptom family,ad,cpu_usage,10,eu;us,chaos_object=stress_cpu_ad,0,S01_ad_high_cpu_run_01
+S02_payment_failure,14,strong symptom family,payment,pod_restart_count,10,ap;eu;us,chaos_object=pod_failure_payment,0,S02_payment_failure_run_01
+S03_checkout_pod_kill,14,direct symptom family,checkout,pod_restart_count,10,ap;eu;us,chaos_object=pod_kill_checkout,0,S03_checkout_pod_kill_run_01
+S04_productcatalog_network_delay,14,strong symptom family,product-catalog,cpu_usage,10,eu;us,chaos_object=stress_cpu_productcatalog;missing,4,S04_productcatalog_network_delay_run_01
+S05_email_memory_leak,11,strong symptom family,email,memory_usage,10,eu;us,chaos_object=stress_memory_email,0,S05_email_memory_leak_run_01
+S06_reco_cache_growth,11,strong symptom family,recommendation,memory_usage,20,ap;eu,chaos_object=stress_memory_recommendation,0,S06_reco_cache_growth_run_01
+S07_homepage_flood,10,mixed symptom family,frontend,cpu_usage,10,ap;eu;us,chaos_object=stress_cpu_frontend,0,S07_homepage_flood_run_01
+S08_kafka_queue_lag,14,strong symptom family,kafka,pod_restart_count,10,ap;us,chaos_object=pod_failure_kafka;missing,4,S08_kafka_queue_lag_run_01
+S09_payment_dns_fault,11,mixed symptom family,payment,cpu_usage,10,eu;us,chaos_object=stress_cpu_payment,0,S09_payment_dns_fault_run_01
+S10_productcatalog_failure,27,mixed symptom family,product-catalog,pod_restart_count,10,ap;eu,chaos_object=pod_failure_productcatalog,0,S10_productcatalog_failure_run_01
+S11_image_slow_load,11,,frontend,latency_p95,10;5,ap;us,feature_flag_variant=10sec;feature_flag_variant=5sec,0,S11_image_slow_load_run_01
+S12_cart_failed_readiness,11,,cart,pod_running_count,10;5,eu;us,feature_flag_variant=on,0,S12_cart_failed_readiness_run_01
+S13_payment_unreachable,1,,payment,dependency_error_ratio,10,us,feature_flag_variant=on,0,S13_payment_unreachable_run_01
+S14_recommendation_network_loss,1,,recommendation,latency_p95,10,eu,chaos_object=network_loss_recommendation,0,S14_recommendation_network_loss_run_01
+S15_email_pod_kill,1,,email,pod_running_count,10,ap,chaos_object=pod_kill_email,0,S15_email_pod_kill_run_01
+S16_productcatalog_http_abort,1,,product-catalog,error_ratio,5,eu,chaos_object=http_abort_productcatalog,0,S16_productcatalog_http_abort_run_01
+S17_ad_pod_failure,4,direct symptom family,ad,pod_restart_count,10,ap;eu,chaos_object=pod_failure_ad,0,S17_ad_pod_failure_run_04
+S18_recommendation_pod_failure,4,direct symptom family,recommendation,pod_restart_count,10,ap;eu,chaos_object=pod_failure_recommendation,0,S18_recommendation_pod_failure_run_04
+S19_frontend_pod_failure,6,direct symptom family,frontend,pod_restart_count,10,apac;eu;us,chaos_object=pod_failure_frontend,0,S19_frontend_pod_failure_run_04
+S20_email_pod_failure,6,direct symptom family,email,pod_restart_count,10,apac;eu;us,chaos_object=pod_failure_email,0,S20_email_pod_failure_run_04
+S21_cart_pod_failure,6,direct symptom family,cart,pod_restart_count,10,apac;eu;us,chaos_object=pod_failure_cart,0,S21_cart_pod_failure_run_04
+S22_image_provider_memory_stress,6,strong symptom family,image-provider,memory_usage,10,apac;eu;us,chaos_object=stress_memory_image_provider,0,S22_image_provider_memory_stress_run_04
+S23_productcatalog_flag_mixed,6,mixed symptom family,recommendation,dependency_error_ratio,10,eu,feature_flag_variant=on,0,S23_productcatalog_flag_mixed_run_04

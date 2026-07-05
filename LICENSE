@@ -1,0 +1,17 @@
+This repository uses a split license.
+
+Triage-Field data and field-derived artifacts are licensed under Creative
+Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+(CC BY-NC-ND 4.0). See LICENSE-CC-BY-NC-ND-4.0.
+
+Triage-Bench data and bench-only artifacts are licensed under Creative Commons
+Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). See
+LICENSE-CC-BY-ND-4.0.
+
+Verification and reproduction scripts are licensed under the MIT License. See
+LICENSE-MIT.
+
+When an artifact combines Triage-Field and Triage-Bench data, the more
+restrictive Triage-Field license applies: CC BY-NC-ND 4.0. Repository-level
+documentation that describes both release boundaries is also distributed under
+CC BY-NC-ND 4.0 unless a more specific notice is provided.

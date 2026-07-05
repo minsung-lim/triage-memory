@@ -1,0 +1,17 @@
+dimension,value,cases
+truth_duration_min,10,183
+truth_duration_min,20,11
+truth_duration_min,5,6
+logical_pre_window_min,30,200
+logical_observation_window_min,30,92
+logical_observation_window_min,40,108
+logical_active_window_min,10,183
+logical_active_window_min,20,11
+logical_active_window_min,5,6
+logical_post_window_min,0,200
+execution_available,false,8
+execution_available,true,192
+runtime_profile_available,false,8
+runtime_profile_available,true,192
+recovered_from_prometheus,false,192
+recovered_from_prometheus,true,8

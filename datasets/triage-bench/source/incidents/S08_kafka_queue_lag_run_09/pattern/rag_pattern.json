@@ -1,0 +1,41 @@
+{
+  "incident_id": "S08_kafka_queue_lag_run_09",
+  "family_id": "S08_kafka_queue_lag",
+  "region": "ap",
+  "scheduled_anchor_kst": "2026-08-04T00:00:00+09:00",
+  "preferred_hour_kst": 0,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "kafka",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "kafka",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": -99.907796817001,
+  "slot_top_residual_z": -19.9815593634002,
+  "change_start_service": "kafka",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": -99.72793567833395,
+  "change_start_residual_z": -19.94558713566679,
+  "sequence_services": [
+    "kafka",
+    "product-catalog",
+    "email",
+    "kafka",
+    "recommendation"
+  ],
+  "sequence_metrics": [
+    "memory_usage",
+    "cpu_usage",
+    "cpu_usage",
+    "cpu_usage",
+    "cpu_usage"
+  ],
+  "service_text": "incident_id S08_kafka_queue_lag_run_09 family_id S08_kafka_queue_lag region ap slot_top_service kafka slot_top_metric memory_usage slot_top_delta_pct -99.91% slot_top_residual_z -19.98 change_start_service kafka change_start_metric memory_usage change_start_offset -8.7m change_start_delta_pct -99.73% change_start_residual_z -19.95 sequence_rank1_service kafka sequence_rank1_metric memory_usage sequence_rank1_offset -8.7m sequence_rank2_service product-catalog sequence_rank2_metric cpu_usage sequence_rank2_offset -7.8m sequence_rank3_service email sequence_rank3_metric cpu_usage sequence_rank3_offset -7.8m sequence_rank4_service kafka sequence_rank4_metric cpu_usage sequence_rank4_offset -5.8m sequence_rank5_service recommendation sequence_rank5_metric cpu_usage sequence_rank5_offset -1.8m slot_rank1_service kafka slot_rank1_metric memory_usage slot_rank2_service product-catalog slot_rank2_metric cpu_usage slot_rank3_service email slot_rank3_metric cpu_usage slot_rank4_service kafka slot_rank4_metric cpu_usage slot_rank5_service recommendation slot_rank5_metric cpu_usage",
+  "line_text": "rank 1 service kafka metric memory_usage earliest_residual_z -19.95 peak_residual_z -19.98 rank 2 service product-catalog metric cpu_usage earliest_residual_z -8.54 peak_residual_z -8.54 rank 3 service email metric cpu_usage earliest_residual_z -12.05 peak_residual_z -14.79 rank 4 service kafka metric cpu_usage earliest_residual_z -20.00 peak_residual_z -20.00 rank 5 service recommendation metric cpu_usage earliest_residual_z -4.40 peak_residual_z -5.67"
+}

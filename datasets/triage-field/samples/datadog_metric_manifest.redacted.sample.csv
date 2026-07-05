@@ -1,0 +1,3 @@
+service_status,dashboard_status,preset_status,raw_parsed_query_count,canonical_base_query_count,derived_metric_count,canonical_metric_families,public_action
+<removed:actual_service>,<removed:dashboard_id>,<removed:region_or_preset>,65,8,1,"cpu_usage | http_2xx_count | http_4xx_count | http_5xx_count | latency_p95 | latency_p99 | memory_usage | request_count | response_count","keep only metric families and aggregate counts"
+<removed:actual_service>,<removed:dashboard_id>,<removed:region_or_preset>,65,8,1,"cpu_usage | http_2xx_count | http_4xx_count | http_5xx_count | latency_p95 | latency_p99 | memory_usage | request_count | response_count","remove service/dashboard/preset before public release"

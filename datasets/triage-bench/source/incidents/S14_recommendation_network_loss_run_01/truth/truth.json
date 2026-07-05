@@ -1,0 +1,19 @@
+{
+  "incident_id": "S14_recommendation_network_loss_run_01",
+  "family_id": "S14_recommendation_network_loss",
+  "tier": "hard_edge",
+  "region": "eu",
+  "preferred_hour_kst": 7,
+  "scheduled_hour_kst": 7,
+  "scheduled_anchor_kst": "2026-06-06T07:00:00+09:00",
+  "time_pattern_label": "nearby_window",
+  "sequence_variation_label": "near_tie_primary_first",
+  "order_competition_group": "hard_confounder",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "recommendation",
+  "root_metric_truth": "latency_p95",
+  "expected_earliest": "recommendation/latency_p95",
+  "expected_dominant": "frontend/latency_p95"
+}

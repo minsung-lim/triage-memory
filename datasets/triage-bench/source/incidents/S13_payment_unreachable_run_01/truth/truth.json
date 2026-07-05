@@ -1,0 +1,19 @@
+{
+  "incident_id": "S13_payment_unreachable_run_01",
+  "family_id": "S13_payment_unreachable",
+  "tier": "hard_edge",
+  "region": "us",
+  "preferred_hour_kst": 13,
+  "scheduled_hour_kst": 13,
+  "scheduled_anchor_kst": "2026-06-05T13:00:00+09:00",
+  "time_pattern_label": "nearby_window",
+  "sequence_variation_label": "near_tie_primary_first",
+  "order_competition_group": "hard_confounder",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "payment",
+  "root_metric_truth": "dependency_error_ratio",
+  "expected_earliest": "payment/dependency_error_ratio",
+  "expected_dominant": "checkout/http_5xx_ratio"
+}

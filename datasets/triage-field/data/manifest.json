@@ -1,0 +1,50 @@
+{
+  "dataset": "triage_field_public_candidate",
+  "generated_from": [
+    "internal Triage-Field label review source",
+    "internal Triage-Field grouped case source",
+    "internal Triage-Field reviewed family source"
+  ],
+  "case_count": 30,
+  "family_count": 8,
+  "service_alias_count": 6,
+  "query_field_rows": 240,
+  "removed": [
+    "actual service names",
+    "actual incident ids",
+    "region and preset",
+    "exact timestamp",
+    "exact offset minute",
+    "production metric values",
+    "raw Datadog queries and tags",
+    "dashboard/widget ids",
+    "owner/person identifiers"
+  ],
+  "preserved": [
+    "public case id",
+    "public family id",
+    "family type",
+    "service alias",
+    "service layer hint",
+    "metric family",
+    "direction",
+    "magnitude bucket",
+    "relative offset bucket",
+    "change order rank",
+    "reviewed first-service label",
+    "self-excluded retrieval outcome"
+  ],
+  "claims_supported": [
+    "alert-service and first-service can differ",
+    "four-field memory can be evaluated without exposing raw telemetry",
+    "family and first-service retrieval outcomes can be checked",
+    "candidate ambiguity can be reported in aggregate"
+  ],
+  "claims_not_supported": [
+    "raw Datadog query reproduction",
+    "exact time-series reproduction",
+    "company-wide Samsung Account representativeness",
+    "MTTR improvement",
+    "final RCA correctness"
+  ]
+}

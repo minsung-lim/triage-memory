@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Local secrets and machine-specific files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Non-public working material
+private/
+internal/
+scratch/
+tmp/
+work/
+workspace/
+archive/
+backup/
+*_private/
+*_internal/
+
+# Logs and transient build outputs
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz

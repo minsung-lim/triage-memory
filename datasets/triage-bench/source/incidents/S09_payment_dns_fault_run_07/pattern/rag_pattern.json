@@ -1,0 +1,33 @@
+{
+  "incident_id": "S09_payment_dns_fault_run_07",
+  "family_id": "S09_payment_dns_fault",
+  "region": "us",
+  "scheduled_anchor_kst": "2026-08-05T13:00:00+09:00",
+  "preferred_hour_kst": 13,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "product-catalog",
+  "alarm_family": "memory_usage",
+  "slot_top_service": "product-catalog",
+  "slot_top_metric_family": "memory_usage",
+  "slot_top_delta_pct": -1.0922699954895112,
+  "slot_top_residual_z": -0.21845399909790222,
+  "change_start_service": "product-catalog",
+  "change_start_metric_family": "memory_usage",
+  "change_start_delta_pct": null,
+  "change_start_residual_z": null,
+  "sequence_services": [
+    "product-catalog"
+  ],
+  "sequence_metrics": [
+    "memory_usage"
+  ],
+  "service_text": "incident_id S09_payment_dns_fault_run_07 family_id S09_payment_dns_fault region us slot_top_service product-catalog slot_top_metric memory_usage slot_top_delta_pct -1.09% slot_top_residual_z -0.22 change_start_service product-catalog change_start_metric memory_usage change_start_offset na change_start_delta_pct na change_start_residual_z 0.00 sequence_rank1_service product-catalog sequence_rank1_metric memory_usage sequence_rank1_offset na slot_rank1_service product-catalog slot_rank1_metric memory_usage slot_rank2_service payment slot_rank2_metric memory_usage slot_rank3_service email slot_rank3_metric memory_usage slot_rank4_service frontend slot_rank4_metric memory_usage slot_rank5_service recommendation slot_rank5_metric memory_usage",
+  "line_text": "rank 1 service product-catalog metric memory_usage earliest_residual_z 0.00 peak_residual_z -0.22"
+}

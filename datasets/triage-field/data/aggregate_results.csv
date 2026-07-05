@@ -1,0 +1,5 @@
+input_condition,family_at1,first_service_at1,avg_first_service_candidate_count,notes
+alert_service_metric_only,9/30,6/30,2.97,alert-service baseline; self-excluded
+plus_maximum_change,18/30,19/30,1.20,fixed-window reviewed view; self-excluded
+plus_earliest_abnormal,19/30,20/30,1.00,fixed-window reviewed view; self-excluded
+four_field_with_order,23/30,24/30,1.00,four-field Triage-Field condition; self-excluded

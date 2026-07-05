@@ -1,0 +1,78 @@
+{
+  "triage_field": {
+    "family_structure": {
+      "reviewed_families": 8,
+      "recurring_families": 5,
+      "recurring_cases": 27,
+      "singleton_families": 3
+    },
+    "main_metrics": [
+      {
+        "input": "alert_service_metric_only",
+        "family_at1": "9/30 = 0.300",
+        "first_service": "6/30 = 0.200"
+      },
+      {
+        "input": "plus_maximum_change",
+        "family_at1": "18/30 = 0.600",
+        "first_service": "19/30 = 0.633"
+      },
+      {
+        "input": "plus_earliest_abnormal",
+        "family_at1": "19/30 = 0.633",
+        "first_service": "20/30 = 0.667"
+      },
+      {
+        "input": "four_field_with_order",
+        "family_at1": "23/30 = 0.767",
+        "first_service": "24/30 = 0.800"
+      }
+    ],
+    "label_review": {
+      "first_service_agreement": "25/30",
+      "reviewed_family_grouping_agreement": "30/30",
+      "exact_representative_agreement_not_used_in_paper": "26/30"
+    },
+    "miss_taxonomy": {
+      "singleton_no_prior": "2/6",
+      "top3_not_top1": "3/6",
+      "hard_recurring_miss": "1/6"
+    },
+    "first_service_candidate_count": {
+      "alert_service_metric_only": 2.97,
+      "maximum_change": 1.2,
+      "earliest_abnormal": 1.0,
+      "change_order": 1.0
+    },
+    "layer_breakdown": {
+      "application_service": {
+        "cases": 20,
+        "alert_message_only_hit": "6/20",
+        "four_field_hit": "15/20"
+      },
+      "storage_dependency": {
+        "cases": 10,
+        "alert_message_only_hit": "0/10",
+        "four_field_hit": "9/10"
+      }
+    }
+  },
+  "triage_bench": {
+    "cases": 200,
+    "services": 25,
+    "pods": 41,
+    "fault_families": 23,
+    "prior_same_family_cases": 177,
+    "paper_results": {
+      "alert_message_only_service_metric": "61/200",
+      "four_field_service_metric": "153/200",
+      "alert_message_only_first_service": "71/200",
+      "four_field_first_service": "155/200",
+      "tied_top_score_records": "13.19 -> 1.04"
+    }
+  },
+  "notes": {
+    "triage_field_candidate_count_unit": "FS Cand. is distinct first-service candidates in the top-score group, not service-metric candidates.",
+    "triage_bench_tied_record_unit": "Tied rec. is the average number of top-score records before the fixed tie break, not distinct service-metric candidates."
+  }
+}

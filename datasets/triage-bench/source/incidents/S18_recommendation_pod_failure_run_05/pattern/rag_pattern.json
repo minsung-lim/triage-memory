@@ -1,0 +1,41 @@
+{
+  "incident_id": "S18_recommendation_pod_failure_run_05",
+  "family_id": "S18_recommendation_pod_failure",
+  "region": "ap",
+  "scheduled_anchor_kst": "2027-01-20T09:00:00+09:00",
+  "preferred_hour_kst": 9,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "order_expansion_30min",
+    "order_competition_group": "recommendation_restart_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "recommendation",
+  "alarm_family": "pod_restart_count",
+  "slot_top_service": "recommendation",
+  "slot_top_metric_family": "pod_restart_count",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 2000000.0,
+  "change_start_service": "recommendation",
+  "change_start_metric_family": "pod_restart_count",
+  "change_start_delta_pct": NaN,
+  "change_start_residual_z": 2000000.0,
+  "sequence_services": [
+    "frontend",
+    "kafka",
+    "recommendation",
+    "recommendation",
+    "product-catalog"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "queue_lag",
+    "pod_restart_count",
+    "cpu_usage",
+    "cpu_usage"
+  ],
+  "service_text": "incident_id S18_recommendation_pod_failure_run_05 family_id S18_recommendation_pod_failure region ap slot_top_service recommendation slot_top_metric pod_restart_count slot_top_delta_pct na slot_top_residual_z 2000000.00 change_start_service recommendation change_start_metric pod_restart_count change_start_offset -9.0m change_start_delta_pct na change_start_residual_z 2000000.00 sequence_rank1_service frontend sequence_rank1_metric request_count sequence_rank1_offset -9.7m sequence_rank2_service kafka sequence_rank2_metric queue_lag sequence_rank2_offset -9.3m sequence_rank3_service recommendation sequence_rank3_metric pod_restart_count sequence_rank3_offset -9.0m sequence_rank4_service recommendation sequence_rank4_metric cpu_usage sequence_rank4_offset -7.2m sequence_rank5_service product-catalog sequence_rank5_metric cpu_usage sequence_rank5_offset -7.2m slot_rank1_service recommendation slot_rank1_metric pod_restart_count slot_rank2_service recommendation slot_rank2_metric memory_usage slot_rank3_service recommendation slot_rank3_metric cpu_usage slot_rank4_service ad slot_rank4_metric dependency_error_ratio slot_rank5_service frontend slot_rank5_metric latency_p95",
+  "line_text": "rank 1 service frontend metric request_count earliest_residual_z -0.46 peak_residual_z 2.18 rank 2 service kafka metric queue_lag earliest_residual_z 4.05 peak_residual_z 4.05 rank 3 service recommendation metric pod_restart_count earliest_residual_z 2000000.00 peak_residual_z 2000000.00 rank 4 service recommendation metric cpu_usage earliest_residual_z -20.00 peak_residual_z -20.00 rank 5 service product-catalog metric cpu_usage earliest_residual_z 2.05 peak_residual_z 2.05"
+}

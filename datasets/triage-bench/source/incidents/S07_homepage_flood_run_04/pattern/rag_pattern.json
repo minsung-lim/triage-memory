@@ -1,0 +1,41 @@
+{
+  "incident_id": "S07_homepage_flood_run_04",
+  "family_id": "S07_homepage_flood",
+  "region": "us",
+  "scheduled_anchor_kst": "2026-03-15T18:00:00+09:00",
+  "preferred_hour_kst": 20,
+  "scenario_traits": {
+    "time_pattern_label": "nearby_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "product-catalog",
+  "alarm_family": "pod_restart_count",
+  "slot_top_service": "product-catalog",
+  "slot_top_metric_family": "pod_restart_count",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 2000000.0,
+  "change_start_service": "frontend",
+  "change_start_metric_family": "cpu_usage",
+  "change_start_delta_pct": 48.78292329611338,
+  "change_start_residual_z": 3.4802423975505956,
+  "sequence_services": [
+    "frontend",
+    "product-catalog",
+    "cart",
+    "frontend",
+    "recommendation"
+  ],
+  "sequence_metrics": [
+    "cpu_usage",
+    "cpu_usage",
+    "request_count",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S07_homepage_flood_run_04 family_id S07_homepage_flood region us slot_top_service product-catalog slot_top_metric pod_restart_count slot_top_delta_pct na slot_top_residual_z 2000000.00 change_start_service frontend change_start_metric cpu_usage change_start_offset -10.8m change_start_delta_pct +48.78% change_start_residual_z 3.48 sequence_rank1_service frontend sequence_rank1_metric cpu_usage sequence_rank1_offset -10.8m sequence_rank2_service product-catalog sequence_rank2_metric cpu_usage sequence_rank2_offset -10.8m sequence_rank3_service cart sequence_rank3_metric request_count sequence_rank3_offset -10.8m sequence_rank4_service frontend sequence_rank4_metric request_count sequence_rank4_offset -10.8m sequence_rank5_service recommendation sequence_rank5_metric request_count sequence_rank5_offset -10.8m slot_rank1_service product-catalog slot_rank1_metric pod_restart_count slot_rank2_service frontend slot_rank2_metric cpu_usage slot_rank3_service recommendation slot_rank3_metric latency_p95 slot_rank4_service frontend slot_rank4_metric latency_p95 slot_rank5_service ad slot_rank5_metric latency_p95",
+  "line_text": "rank 1 service frontend metric cpu_usage earliest_residual_z 3.48 peak_residual_z 209.06 rank 2 service product-catalog metric cpu_usage earliest_residual_z -0.55 peak_residual_z 3.21 rank 3 service cart metric request_count earliest_residual_z -0.37 peak_residual_z 2.86 rank 4 service frontend metric request_count earliest_residual_z -0.37 peak_residual_z 2.76 rank 5 service recommendation metric request_count earliest_residual_z -0.37 peak_residual_z 2.85"
+}

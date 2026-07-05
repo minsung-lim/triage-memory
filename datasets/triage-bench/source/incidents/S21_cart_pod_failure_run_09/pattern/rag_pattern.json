@@ -1,0 +1,41 @@
+{
+  "incident_id": "S21_cart_pod_failure_run_09",
+  "family_id": "S21_cart_pod_failure",
+  "region": "apac",
+  "scheduled_anchor_kst": "2027-04-18T15:00:00+09:00",
+  "preferred_hour_kst": 15,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "candidate200_30min_extension",
+    "order_competition_group": "candidate200_new_family_extension",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "cart",
+  "alarm_family": "pod_restart_count",
+  "slot_top_service": "cart",
+  "slot_top_metric_family": "pod_restart_count",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 1000000.0,
+  "change_start_service": "cart",
+  "change_start_metric_family": "pod_restart_count",
+  "change_start_delta_pct": NaN,
+  "change_start_residual_z": 1000000.0,
+  "sequence_services": [
+    "frontend",
+    "image-provider",
+    "cart",
+    "frontend",
+    "cart"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "request_count",
+    "pod_restart_count",
+    "latency_p95",
+    "cpu_usage"
+  ],
+  "service_text": "incident_id S21_cart_pod_failure_run_09 family_id S21_cart_pod_failure region apac slot_top_service cart slot_top_metric pod_restart_count slot_top_delta_pct na slot_top_residual_z 1000000.00 change_start_service cart change_start_metric pod_restart_count change_start_offset -9.2m change_start_delta_pct na change_start_residual_z 1000000.00 sequence_rank1_service frontend sequence_rank1_metric request_count sequence_rank1_offset -9.3m sequence_rank2_service image-provider sequence_rank2_metric request_count sequence_rank2_offset -9.3m sequence_rank3_service cart sequence_rank3_metric pod_restart_count sequence_rank3_offset -9.2m sequence_rank4_service frontend sequence_rank4_metric latency_p95 sequence_rank4_offset -8.7m sequence_rank5_service cart sequence_rank5_metric cpu_usage sequence_rank5_offset -8.0m slot_rank1_service cart slot_rank1_metric pod_restart_count slot_rank2_service frontend slot_rank2_metric latency_p95 slot_rank3_service cart slot_rank3_metric memory_usage slot_rank4_service kafka slot_rank4_metric queue_lag slot_rank5_service ad slot_rank5_metric dependency_error_ratio",
+  "line_text": "rank 1 service frontend metric request_count earliest_residual_z -0.47 peak_residual_z 2.14 rank 2 service image-provider metric request_count earliest_residual_z -0.47 peak_residual_z 2.12 rank 3 service cart metric pod_restart_count earliest_residual_z 1000000.00 peak_residual_z 1000000.00 rank 4 service frontend metric latency_p95 earliest_residual_z -0.48 peak_residual_z 2.41 rank 5 service cart metric cpu_usage earliest_residual_z -1.69 peak_residual_z -1.69"
+}

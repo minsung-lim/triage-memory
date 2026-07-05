@@ -1,0 +1,41 @@
+{
+  "incident_id": "S10_productcatalog_failure_run_11",
+  "family_id": "S10_productcatalog_failure",
+  "region": "ap",
+  "scheduled_anchor_kst": "2026-08-26T07:00:00+09:00",
+  "preferred_hour_kst": 7,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "stable_order",
+    "order_competition_group": "supporting_metric_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "frontend",
+  "alarm_family": "error_ratio",
+  "slot_top_service": "frontend",
+  "slot_top_metric_family": "error_ratio",
+  "slot_top_delta_pct": 7892.4050632911385,
+  "slot_top_residual_z": 13.405772393357974,
+  "change_start_service": "product-catalog",
+  "change_start_metric_family": "pod_restart_count",
+  "change_start_delta_pct": NaN,
+  "change_start_residual_z": 1000000.0,
+  "sequence_services": [
+    "cart",
+    "checkout",
+    "frontend",
+    "recommendation",
+    "ad"
+  ],
+  "sequence_metrics": [
+    "latency_p95",
+    "request_count",
+    "latency_p95",
+    "request_count",
+    "request_count"
+  ],
+  "service_text": "incident_id S10_productcatalog_failure_run_11 family_id S10_productcatalog_failure region ap slot_top_service frontend slot_top_metric error_ratio slot_top_delta_pct +7892.41% slot_top_residual_z 13.41 change_start_service product-catalog change_start_metric pod_restart_count change_start_offset -9.2m change_start_delta_pct na change_start_residual_z 1000000.00 sequence_rank1_service cart sequence_rank1_metric latency_p95 sequence_rank1_offset -9.3m sequence_rank2_service checkout sequence_rank2_metric request_count sequence_rank2_offset -9.3m sequence_rank3_service frontend sequence_rank3_metric latency_p95 sequence_rank3_offset -9.3m sequence_rank4_service recommendation sequence_rank4_metric request_count sequence_rank4_offset -9.3m sequence_rank5_service ad sequence_rank5_metric request_count sequence_rank5_offset -9.3m slot_rank1_service frontend slot_rank1_metric error_ratio slot_rank2_service product-catalog slot_rank2_metric pod_restart_count slot_rank3_service frontend slot_rank3_metric dependency_error_ratio slot_rank4_service checkout slot_rank4_metric latency_p95 slot_rank5_service recommendation slot_rank5_metric dependency_error_ratio",
+  "line_text": "rank 1 service cart metric latency_p95 earliest_residual_z -0.82 peak_residual_z 1.95 rank 2 service checkout metric request_count earliest_residual_z -0.27 peak_residual_z 9.68 rank 3 service frontend metric latency_p95 earliest_residual_z -0.85 peak_residual_z -0.86 rank 4 service recommendation metric request_count earliest_residual_z -0.32 peak_residual_z 5.27 rank 5 service ad metric request_count earliest_residual_z 1.38 peak_residual_z 3.08"
+}

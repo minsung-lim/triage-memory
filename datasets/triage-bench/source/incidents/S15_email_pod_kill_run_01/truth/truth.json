@@ -1,0 +1,19 @@
+{
+  "incident_id": "S15_email_pod_kill_run_01",
+  "family_id": "S15_email_pod_kill",
+  "tier": "hard_edge",
+  "region": "ap",
+  "preferred_hour_kst": 0,
+  "scheduled_hour_kst": 0,
+  "scheduled_anchor_kst": "2026-06-07T00:00:00+09:00",
+  "time_pattern_label": "nearby_window",
+  "sequence_variation_label": "near_tie_primary_first",
+  "order_competition_group": "hard_confounder",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "email",
+  "root_metric_truth": "pod_running_count",
+  "expected_earliest": "email/pod_running_count",
+  "expected_dominant": "checkout/latency_p95"
+}

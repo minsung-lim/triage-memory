@@ -1,0 +1,19 @@
+{
+  "incident_id": "S07_homepage_flood_run_06",
+  "family_id": "S07_homepage_flood",
+  "tier": "medium",
+  "region": "ap",
+  "preferred_hour_kst": 20,
+  "scheduled_hour_kst": 8,
+  "scheduled_anchor_kst": "2026-03-17T08:00:00+09:00",
+  "time_pattern_label": "shifted_window",
+  "sequence_variation_label": "near_tie_secondary_first",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "frontend",
+  "root_metric_truth": "cpu_usage",
+  "expected_earliest": "frontend/cpu_usage",
+  "expected_dominant": "frontend/latency_p95"
+}

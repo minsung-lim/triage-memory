@@ -1,0 +1,19 @@
+{
+  "incident_id": "S02_payment_failure_run_01",
+  "family_id": "S02_payment_failure",
+  "tier": "frequent",
+  "region": "us",
+  "preferred_hour_kst": 13,
+  "scheduled_hour_kst": 13,
+  "scheduled_anchor_kst": "2026-01-25T13:00:00+09:00",
+  "time_pattern_label": "same_window",
+  "sequence_variation_label": "stable_order",
+  "order_competition_group": "supporting_metric_competition",
+  "traffic_bucket": "high",
+  "intensity": "high",
+  "duration_min": 10,
+  "root_service_truth": "payment",
+  "root_metric_truth": "pod_restart_count",
+  "expected_earliest": "payment/pod_restart_count",
+  "expected_dominant": "frontend/http_5xx_ratio"
+}

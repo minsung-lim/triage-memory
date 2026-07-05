@@ -1,0 +1,41 @@
+{
+  "incident_id": "S17_ad_pod_failure_run_04",
+  "family_id": "S17_ad_pod_failure",
+  "region": "eu",
+  "scheduled_anchor_kst": "2027-01-16T07:00:00+09:00",
+  "preferred_hour_kst": 7,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "order_expansion_30min",
+    "order_competition_group": "ad_restart_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "ad",
+  "alarm_family": "pod_restart_count",
+  "slot_top_service": "ad",
+  "slot_top_metric_family": "pod_restart_count",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 1000000.0,
+  "change_start_service": "ad",
+  "change_start_metric_family": "pod_restart_count",
+  "change_start_delta_pct": NaN,
+  "change_start_residual_z": 1000000.0,
+  "sequence_services": [
+    "frontend",
+    "ad",
+    "payment",
+    "recommendation",
+    "email"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "pod_restart_count",
+    "cpu_usage",
+    "dependency_error_ratio",
+    "cpu_usage"
+  ],
+  "service_text": "incident_id S17_ad_pod_failure_run_04 family_id S17_ad_pod_failure region eu slot_top_service ad slot_top_metric pod_restart_count slot_top_delta_pct na slot_top_residual_z 1000000.00 change_start_service ad change_start_metric pod_restart_count change_start_offset -9.5m change_start_delta_pct na change_start_residual_z 1000000.00 sequence_rank1_service frontend sequence_rank1_metric request_count sequence_rank1_offset -9.7m sequence_rank2_service ad sequence_rank2_metric pod_restart_count sequence_rank2_offset -9.5m sequence_rank3_service payment sequence_rank3_metric cpu_usage sequence_rank3_offset -9.0m sequence_rank4_service recommendation sequence_rank4_metric dependency_error_ratio sequence_rank4_offset -8.8m sequence_rank5_service email sequence_rank5_metric cpu_usage sequence_rank5_offset -8.5m slot_rank1_service ad slot_rank1_metric pod_restart_count slot_rank2_service ad slot_rank2_metric memory_usage slot_rank3_service frontend slot_rank3_metric latency_p95 slot_rank4_service ad slot_rank4_metric cpu_usage slot_rank5_service recommendation slot_rank5_metric dependency_error_ratio",
+  "line_text": "rank 1 service frontend metric request_count earliest_residual_z -0.46 peak_residual_z 2.18 rank 2 service ad metric pod_restart_count earliest_residual_z 1000000.00 peak_residual_z 1000000.00 rank 3 service payment metric cpu_usage earliest_residual_z -0.24 peak_residual_z -0.28 rank 4 service recommendation metric dependency_error_ratio earliest_residual_z 7.71 peak_residual_z 7.71 rank 5 service email metric cpu_usage earliest_residual_z -1.90 peak_residual_z -1.90"
+}

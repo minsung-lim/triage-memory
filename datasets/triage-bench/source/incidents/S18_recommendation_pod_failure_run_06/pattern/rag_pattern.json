@@ -1,0 +1,41 @@
+{
+  "incident_id": "S18_recommendation_pod_failure_run_06",
+  "family_id": "S18_recommendation_pod_failure",
+  "region": "eu",
+  "scheduled_anchor_kst": "2027-01-21T15:00:00+09:00",
+  "preferred_hour_kst": 15,
+  "scenario_traits": {
+    "time_pattern_label": "same_window",
+    "sequence_variation_label": "order_expansion_30min",
+    "order_competition_group": "recommendation_restart_competition",
+    "traffic_bucket": "high",
+    "intensity": "high",
+    "duration_min": 10
+  },
+  "anchor_service": "recommendation",
+  "alarm_family": "pod_restart_count",
+  "slot_top_service": "recommendation",
+  "slot_top_metric_family": "pod_restart_count",
+  "slot_top_delta_pct": NaN,
+  "slot_top_residual_z": 2000000.0,
+  "change_start_service": "recommendation",
+  "change_start_metric_family": "pod_restart_count",
+  "change_start_delta_pct": NaN,
+  "change_start_residual_z": 2000000.0,
+  "sequence_services": [
+    "frontend",
+    "recommendation",
+    "recommendation",
+    "frontend",
+    "recommendation"
+  ],
+  "sequence_metrics": [
+    "request_count",
+    "pod_restart_count",
+    "cpu_usage",
+    "cpu_usage",
+    "memory_usage"
+  ],
+  "service_text": "incident_id S18_recommendation_pod_failure_run_06 family_id S18_recommendation_pod_failure region eu slot_top_service recommendation slot_top_metric pod_restart_count slot_top_delta_pct na slot_top_residual_z 2000000.00 change_start_service recommendation change_start_metric pod_restart_count change_start_offset -9.2m change_start_delta_pct na change_start_residual_z 2000000.00 sequence_rank1_service frontend sequence_rank1_metric request_count sequence_rank1_offset -9.7m sequence_rank2_service recommendation sequence_rank2_metric pod_restart_count sequence_rank2_offset -9.2m sequence_rank3_service recommendation sequence_rank3_metric cpu_usage sequence_rank3_offset -7.8m sequence_rank4_service frontend sequence_rank4_metric cpu_usage sequence_rank4_offset -5.8m sequence_rank5_service recommendation sequence_rank5_metric memory_usage sequence_rank5_offset -5.0m slot_rank1_service recommendation slot_rank1_metric pod_restart_count slot_rank2_service recommendation slot_rank2_metric memory_usage slot_rank3_service recommendation slot_rank3_metric cpu_usage slot_rank4_service ad slot_rank4_metric dependency_error_ratio slot_rank5_service frontend slot_rank5_metric latency_p95",
+  "line_text": "rank 1 service frontend metric request_count earliest_residual_z -0.44 peak_residual_z 2.25 rank 2 service recommendation metric pod_restart_count earliest_residual_z 2000000.00 peak_residual_z 2000000.00 rank 3 service recommendation metric cpu_usage earliest_residual_z -12.91 peak_residual_z -12.92 rank 4 service frontend metric cpu_usage earliest_residual_z 2.15 peak_residual_z 2.15 rank 5 service recommendation metric memory_usage earliest_residual_z -2.62 peak_residual_z -8.57"
+}
